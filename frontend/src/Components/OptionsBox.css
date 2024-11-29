@@ -1,0 +1,47 @@
+.options-box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px; /* Adjust as needed */
+    width: 100%;
+  }
+  
+  .options-section {
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .option input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .price {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .range-selector {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .range-values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .options-box {
+      margin: 10px;
+    }
+  }
+  

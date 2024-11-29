@@ -1,0 +1,39 @@
+.pricing-box-container {
+    display: flex;
+    justify-content: space-around; /* Distribute space around items */
+    align-items:self-start;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 10px; /* Add some padding around the container */
+  }
+  
+  .options-box {
+    flex: 1; /* Make the options box take up as much space as needed */
+    max-width: 300px; /* Optionally set a maximum width */
+    margin-right: 5px; /* Minimal gap between the options box and pricing boxes */
+  }
+  
+  .pricing-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start; /* Center the pricing boxes */
+     /* Make the pricing boxes container take up remaining space */
+  }
+  
+  .pricing-box {
+    margin: 10px 0; /* Add margin between pricing boxes */
+  }
+  
+  @media (max-width: 600px) {
+    .pricing-box-container {
+      flex-direction: column; /* Stack the options and pricing boxes vertically on small screens */
+      align-items: center; /* Center align the items */
+    }
+  
+    .options-box, .pricing-boxes {
+      max-width: 90%; /* Ensure the boxes take full width on small screens */
+      margin-right: 0; /* Remove right margin on small screens */
+      padding: 10px;
+      margin-left: 0;
+    }
+  }
+  
