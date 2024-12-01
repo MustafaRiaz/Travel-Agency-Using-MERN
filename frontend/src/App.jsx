@@ -12,12 +12,14 @@ import Footer from './Components/footer.jsx';
 import Subscribe from './Components/ContactUs.jsx';
 import WhatsAppIcon from './Components/WhatsappIcon.jsx';
 import PriceBoxContainer from './Components/PriceBoxContainer.jsx';
+import Login from './pages/Login.jsx'
 function App() {
 
   return (
     <>
       <ContactStrip/>
       <Router>
+       
         <Navbar />
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
