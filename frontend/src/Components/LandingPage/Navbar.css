@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+  margin: 0;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  min-height: 99px;
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar-logo{
+  margin-left:130px;
+}
+
+.navbar-logo .logo-part1 {
+  color: black;
+}
+
+.navbar-logo .logo-part2 {
+  color: red;
+}
+
+.navbar-logo p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+  
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-right: 130px;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar-links a.active {
+  color: navy;
+  font-weight: bold;
+}
+
+.navbar-links a:hover {
+  color: red;
+}
+
+.register-button {
+  background-color: red;
+  color: white !important;
+  padding: 30px 45px;
+  border-radius: 40px;
+  /* min-height: 50px; */
+
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: darkred;
+}

@@ -1,8 +1,6 @@
-
 import './App.css'
-import Slide from "./Components/Slider.jsx"
-import Navbar from "./Components/Navbar.jsx"
-import ContactStrip from './Components/ContactStrip.jsx';
+import Slide from "./Components/LandingPage/Slider.jsx"
+import Navbar from "./Components/LandingPage/Navbar.jsx"
 import Service from './Service.jsx';
 import About from './About.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -17,7 +15,22 @@ function App() {
 
   return (
     <>
-      <Login />
+      <Router>
+       
+        <Navbar />
+        <Routes>
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Service />} />
+        </Routes>
+      </Router>
+      <Slide />
+      <PriceBoxContainer/>
+      <CardContainer/>
+      <ServiceCardContainer/>
+      <WhatsAppIcon/>
+      <Subscribe/>
+      <Footer/>
 
     </>
   );
