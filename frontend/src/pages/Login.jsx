@@ -13,8 +13,10 @@ const Login = () => {
           <p>Password</p>
           <input type="password" />
           <div>
-            <input type="checkbox" name="remember-me" id="" />
-            <p>Remember me</p>
+            <div>
+                <input type="checkbox" name="remember-me" id="" />
+                <p>Remember me</p>
+            </div>
             <a href="">Forgot Password</a>
           </div>
           <button className="login">Login</button>

@@ -17,23 +17,7 @@ function App() {
 
   return (
     <>
-      <ContactStrip/>
-      <Router>
-       
-        <Navbar />
-        <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Service />} />
-        </Routes>
-      </Router>
-      <Slide />
-      <PriceBoxContainer/>
-      <CardContainer/>
-      <ServiceCardContainer/>
-      <WhatsAppIcon/>
-      <Subscribe/>
-      <Footer/>
+      <Login />
 
     </>
   );
