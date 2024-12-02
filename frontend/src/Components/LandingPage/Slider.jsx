@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlaneDeparture, faPlaneArrival, faCalendarAlt, faUserFriends } from '@fortawesome/free-solid-svg-icons';
 import './Slider.css';
-import image1 from "../assets/Slider Images/Background2.jpg";
+import image1 from "../../assets/Slider Images/CardImages/Background1.jpg";
 
 const Slide = () => {
   return (
