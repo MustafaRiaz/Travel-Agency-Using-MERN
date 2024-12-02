@@ -1,0 +1,132 @@
+/* Login.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .login-details {
+    width: 40%;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .manual-login {
+    margin-bottom: 20px;
+  }
+  
+  .manual-login h2 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .manual-login p {
+    margin: 10px 0 5px;
+    font-size: 0.9rem;
+    color: #555555;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333333;
+  }
+  
+  .manual-login div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  button.login {
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button.login:hover {
+    background-color: #c20811;
+  }
+  
+  .manual-login a {
+    color: #e50914;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .manual-login a:hover {
+    text-decoration: underline;
+  }
+  
+  .authenticate {
+    text-align: center;
+  }
+  
+  .authenticate p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .authenticate button {
+    background-color: #ffffff;
+    color: #555555;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .authenticate button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .picture {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
