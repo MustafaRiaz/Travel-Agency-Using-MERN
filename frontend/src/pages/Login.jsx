@@ -1,5 +1,5 @@
 import React from "react";
-import './Login.css'
+import './Login.css';
 
 const Login = () => {
   return (
@@ -13,9 +13,9 @@ const Login = () => {
           <p>Password</p>
           <input type="password" />
           <div>
-            <div>
-                <input type="checkbox" name="remember-me" id="" />
-                <p>Remember me</p>
+            <div className="remember-me">
+              <input type="checkbox" name="remember-me" id="" />
+              <label>Remember me</label>
             </div>
             <a href="">Forgot Password</a>
           </div>
@@ -27,15 +27,18 @@ const Login = () => {
         </div>
         <div className="authenticate">
           <p>Or login with</p>
-          <div>
-            <button>fcebook</button>
-            <button>google</button>
-            <button>twitter</button>
+          <div className="social-login">
+            <button aria-label="Login with Facebook" className="social-button facebook">
+              <i className="fab fa-facebook-f"></i>
+            </button>
+            <button aria-label="Login with Google" className="social-button google">
+              <i className="fab fa-google"></i>
+            </button>
+            <button aria-label="Login with Twitter" className="social-button twitter">
+              <i className="fab fa-twitter"></i>
+            </button>
           </div>
         </div>
-      </div>
-      <div className="picture">
-        <img src="" alt="" />
       </div>
     </div>
   );

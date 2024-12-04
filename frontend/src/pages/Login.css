@@ -1,11 +1,14 @@
 /* Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-  }
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  width: 100%; /* Ensure body width matches the viewport width */
+  box-sizing: border-box; /* Include padding and border in width calculations */
+}
   
   .login-page {
     display: flex;
@@ -14,18 +17,42 @@ body {
     height: 100vh;
     width: 100%;
     padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
   }
+
   
   .login-details {
-    width: 40%;
+    width: 200vh; /* Adjust width if needed to fit within the viewport */
+    max-width: 500px; /* Limit maximum width */
     padding: 40px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* box-shadow: #555555; */
+}
+  
+  .remember-me {
+    display: inline-flex; /* Ensures the elements are aligned horizontally */
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 8px; /* Adds space between the checkbox and text */
   }
+
+  .remember-me input[type="checkbox"] {
+      margin: 0; /* Removes any extra default margin around the checkbox */
+      vertical-align: middle; /* Ensures the checkbox is vertically aligned with the text */
+  }
+
+  .remember-me label {
+      margin: 0; /* Ensures no additional margin on the label text */
+      font-size: .8rem; /* Adjust font size if needed to ensure alignment */
+      vertical-align: middle; /* Matches the checkbox alignment */
+      /* font-weight: 200; */
+  }
+
+
   
   .manual-login {
     margin-bottom: 20px;
@@ -64,17 +91,64 @@ body {
   input[type="checkbox"] {
     margin-right: 5px;
   }
+
+  .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-button {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .social-button i {
+    margin: 0;
+    color: white;
+  }
+  
+  .social-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: black;
+  }
+  
+  /* Facebook button with brand color */
+  .social-button.facebook {
+    background-color: #4267B2; /* Facebook Blue */
+  }
+  
+  /* Google button with brand color */
+  .social-button.google {
+    background-color: #DB4437; /* Google Red */
+  }
+  
+  /* Twitter button with brand color */
+  .social-button.twitter {
+    background-color: #1DA1F2; /* Twitter Blue */
+  }
+  
   
   button.login {
-    background-color: #e50914;
+    background-color: #FF0211;
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 15px;
     font-size: 1rem;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
+    min-height: 55px;
     width: 100%;
   }
   
@@ -113,21 +187,8 @@ body {
   }
   
   .authenticate button:hover {
-    background-color: #f0f0f0;
+    background-color: #0f0f0f;
+
   }
   
-  .picture {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
-  }
-  
-  .picture img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
   
