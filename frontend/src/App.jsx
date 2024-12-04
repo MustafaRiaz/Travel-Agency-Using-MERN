@@ -10,28 +10,14 @@ import Footer from './Components/footer.jsx';
 import Subscribe from './Components/ContactUs.jsx';
 import WhatsAppIcon from './Components/WhatsappIcon.jsx';
 import PriceBoxContainer from './Components/PriceBoxContainer.jsx';
+import BookingComponent from './Components/LandingPage/FlightBooking.jsx';
 import Login from './pages/Login.jsx'
 function App() {
 
   return (
     <>
-      <Router>
-       
-        <Navbar />
-        <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Service />} />
-        </Routes>
-      </Router>
-      <Slide />
-      <PriceBoxContainer/>
-      <CardContainer/>
-      <ServiceCardContainer/>
-      <WhatsAppIcon/>
-      <Subscribe/>
-      <Footer/>
-
+      <Login />
+      <BookingComponent />
     </>
   );
 }
