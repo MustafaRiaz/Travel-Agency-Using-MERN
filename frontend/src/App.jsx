@@ -12,12 +12,14 @@ import WhatsAppIcon from './Components/WhatsappIcon.jsx';
 import PriceBoxContainer from './Components/PriceBoxContainer.jsx';
 import BookingComponent from './Components/LandingPage/FlightBooking.jsx';
 import Login from './pages/Login.jsx'
+import Payment from './pages/Payments.jsx';
 function App() {
 
   return (
     <>
-      <Login />
+      {/* <Login /> */}
       {/* <BookingComponent /> */}
+      <Payment/>
     </>
   );
 }
