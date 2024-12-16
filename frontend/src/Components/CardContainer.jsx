@@ -1,59 +1,57 @@
-import React, { useRef, useEffect } from 'react';
-import Card from './Card';
-import image1 from '../assets/Slider Images/CardImages/Background1.jpg';
-import image2 from '../assets/Slider Images/CardImages/Background2.jpg';
-import image3 from '../assets/Slider Images/CardImages/Background3.jpg';
-import image4 from '../assets/Slider Images/CardImages/Background4.jpg';
-import image5 from '../assets/Slider Images/CardImages/Background5.jpg';
-import image6 from '../assets/Slider Images/CardImages/Background6.jpg';
+import React from "react";
+import "./CardContainer.css";
+import image1 from "../assets/Slider Images/CardImages/Frame 81.svg";
+import discount from "../assets/Slider Images/CardImages/Discount.png";
+import filter from "../assets/Slider Images/CardImages/Filter.png";
+import frame from "../assets/Slider Images/CardImages/Frame.png";
+import simplification from "../assets/Slider Images/CardImages/Simplification.png";
 
-import './CardContainer.css';
-
-const CardContainer = () => {
-    const cardRefs = useRef([]);
-
-    // Function to handle intersection observer
-    useEffect(() => {
-        const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5, // Trigger when 50% of the card is visible
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('card-visible');
-                } else {
-                    entry.target.classList.remove('card-visible');
-                }
-            });
-        }, options);
-
-        cardRefs.current.forEach((cardRef) => {
-            observer.observe(cardRef);
-        });
-
-        return () => {
-            observer.disconnect();
-        };
-    }, []);
-
-    return (
-        <div className='Container'>
-            <h1 className="heading1">Popular Destinations</h1>
-            <h2 className="heading2">Travel Most Popular Place<br/>In The World</h2>
-            <div className="card-container">
-            <Card ref={(el) => cardRefs.current.push(el)} picture={image1} text1="Dubai" text2="Experience the luxury and futuristic architecture of Dubai." />
-            <Card ref={(el) => cardRefs.current.push(el)} picture={image2} text1="Russia" text2="Explore the rich history and diverse culture of Russia." />
-            <Card ref={(el) => cardRefs.current.push(el)} picture={image3} text1="Saudi Arabia" text2="Discover the ancient heritage and modern wonders of Saudi Arabia." />
-            <Card ref={(el) => cardRefs.current.push(el)} picture={image4} text1="China" text2="Immerse yourself in the vibrant culture and historic landmarks of China." />
-            <Card ref={(el) => cardRefs.current.push(el)} picture={image5} text1="Singapore" text2="Enjoy the blend of cultures and the stunning skyline of Singapore." />
-            <Card ref={(el) => cardRefs.current.push(el)} picture={image6} text1="America" text2="Experience the diverse landscapes and iconic cities of America." />
-
-            </div>
+const NoonMyTrip = () => {
+  return (
+    <div className="noonmytrip-container">
+      {/* Major Airlines Section */}
+      <div className="airlines-section">
+        <div className="airlines-subsection">
+          <div className="text-content">
+            <h3>Major airlines Worldwide</h3>
+            <p>Get the flights from the most trusted airlines</p>
+          </div>
+          <div className="airlines-logos">
+            <img src={image1} alt="Qatar Airways" />
+          </div>
         </div>
-    );
+      </div>
+
+      {/* Features Section */}
+      <div className="features-section">
+        <h2>
+          What <span className="highlight">NoonMyTrip</span> brings to the table.
+        </h2>
+        <div className="features-list">
+          <div className="feature-item">
+            <img src={discount} />
+            <h4>Big names, great deals</h4>
+            <p>Search 100s of travel sites to compare prices.</p>
+          </div>
+          <div className="feature-item">
+            <img src={filter} className="icon-filter" />
+            <h4>Filter for what you want</h4>
+            <p>Free Wi-Fi? Early arrival? Instantly customize your results.</p>
+          </div>
+          <div className="feature-item">
+            <img src={simplification} className="icon-track" />
+            <h4>Track prices</h4>
+            <p>Not ready to book? Set alerts for when prices drop.</p>
+          </div>
+          <div className="feature-item">
+            <img src={frame} className="icon-more" />
+            <h4>More than flights</h4>
+            <p>Find deals for your entire trip from hotels to rental cars.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default CardContainer;
+export default NoonMyTrip;

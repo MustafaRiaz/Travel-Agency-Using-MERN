@@ -1,17 +1,17 @@
-/* General Styles */
-body {
-  margin: 0;
 
-}
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #fff;
+  padding: 8px 14px;
+  background-color: white;
   border-bottom: 1px solid #ddd;
   min-height: 70px;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
 }
 
 .navbar-logo h1 {

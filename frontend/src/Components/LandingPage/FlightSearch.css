@@ -1,0 +1,207 @@
+.container {
+  background: #fbfbfc;
+  width: 100%;
+  max-width: 1500px;
+  min-width: 1200px;
+  max-height: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  position: relative;
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+}
+
+/* Tabs: Flights and Hotels */
+.top-button {
+  position: absolute;
+  top: -54px;
+  left: 0px;
+  background: #fbfbfc;
+  color: #ff0211;
+  padding: 20px 30px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  width: 120px;
+  height: 60px;
+  border: none;
+  z-index: 0;
+}
+
+.top-button-2 {
+  position: absolute;
+  top: -30px;
+  left: 100px;
+  background: transparent;
+  border: 20px solid #fbfbfc;
+  border-top: none;
+  border-right: none;
+  color: black;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 0px;
+  width: 100px;
+  height: 30px;
+  z-index:0 ;
+}
+
+
+.top-button-3 {
+  position: absolute;
+  top: -57px;
+  left: 130px;
+  background: #fbfbfc;
+  padding: 0px 22px;
+  color: black;
+  width: 110px;
+  height: 50px;
+  
+  border-radius: 23px;
+  
+}
+
+/* Second Row Buttons */
+.trip-buttons {
+  display: flex;
+  z-index: 2;
+  
+}
+
+.trip-buttons button {
+  flex: 1;
+  max-width: 100px;
+  margin: 0 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  height: 50px;
+  color: #555;
+  background: #f3f2f5;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.trip-buttons button:hover,
+.trip-buttons button.active {
+  background: lightgray;
+  color: white;
+}
+
+/* Form Section */
+.form-section {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  /* grid-column: span 2; */
+  width: 100%;
+  border: 2px solid #d6d6d9;
+  border-radius: 10px;
+}
+
+.form-group input, .form-group select {
+  padding: 10px;
+  font-size: 14px;
+  /* border-radius: 8px; */
+  border:none;
+  outline: none;
+}
+
+.form-group input:focus, .form-group select:focus {
+  outline: none;
+  border-color: #fbfbfc;
+}
+
+.form-group input{
+  
+  background-color: #fbfbfc;
+  border-radius: 20px;
+}
+
+.swap-icon {
+  grid-column: span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swap-icon img {
+  width: 0px;
+  height: 0px;
+  cursor: pointer;
+}
+
+/* Fourth Row */
+.footer-row {
+  display: grid;
+  grid-template-columns: 3fr 1.2fr 0.8fr;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.checkbox-group {
+  display: flex;
+  border: none;
+}
+
+.checkbox-group input {
+  appearance: none; /* Removes the default checkbox styling */
+  width: 25px;       /* Set width */
+  height: 25px;      /* Set height */
+  margin-right: 10px;
+  border: 2px solid #d6d6d9; /* Add a border with a primary color */
+  border-radius: 4px; /* Slightly rounded corners for a modern look */
+  background-color: white; /* White background */
+  cursor: pointer; /* Show pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover and active effects */
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  gap: 8px; /* Adds spacing between the checkbox and the label */
+}
+
+.checkbox-group input {
+  margin: 0; /* Reset any default margins */
+  width: 20px; /* Set a standard size */
+  height: 20px; /* Match width and height */
+}
+
+.checkbox-group label {
+  font-size: 16px; /* Ensure the label text is readable */
+  cursor: pointer; /* Makes the label clickable */
+  color: black;
+  display: flex;
+  align-items: center; /* Ensures consistent alignment for multiline labels */
+}
+
+
+.dropdown-group>select{
+  border: none;
+  height: 40px;
+  background-color: #fbfbfc;
+  margin: 2px
+}
+
+.search-btn {
+  background: #ff0211;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  height: 60px;
+}
+
+.search-btn:hover {
+  background: #d62828;
+}
