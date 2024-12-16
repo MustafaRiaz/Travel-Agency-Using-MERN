@@ -14,9 +14,15 @@ const Login = () => {
           <input className="Inputs" type="password" />
           <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <div>
                 <input className="Inputs" type="checkbox" name="remember-me" id="" />
                 <p>Remember me</p>
+=======
+            <div className="remember-me">
+              <input type="checkbox" name="remember-me" id="" />
+              <label>Remember me</label>
+>>>>>>> 92dc0ffc62ee9688833ef8cd1eaeca681750413a
 =======
             <div className="remember-me">
               <input type="checkbox" name="remember-me" id="" />
