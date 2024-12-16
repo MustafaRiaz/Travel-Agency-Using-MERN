@@ -3,29 +3,61 @@
 
 body {
   font-family: 'Poppins', 'Montserrat', sans-serif;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
 
-.slide-container {
-  position: relative;
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  overflow: hidden;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-.slide {
+.background {
+  z-index: 1;
+}
+
+.middle {
+  z-index: 2;
+}
+
+.foreground {
+  z-index: 3;
+}
+
+.flight-search {
   position: relative;
-  height: 95vh;
+  z-index: 5;
+  top: 35%;
+  margin-top: 20px;
+}
+
+
+
+.flight-search{
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.slide-container{
+  position: relative;
+  height: 92vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+}
+.slide {
+  height: 70vh !important;
 }
 
 .slide img {
@@ -35,20 +67,18 @@ h1, h2, h3, h4, h5, h6 {
 .slide-content {
   position: absolute;
   top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 60%;
   z-index: 1;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 0 20px; /* Padding for better spacing */
-  /* font-size: 1.5rem; */
+  text-align: left;
+  align-items: left;
+  padding: 0 10px;
+}
+.slide-content>h1{
+  font-size: 2.8rem;
 }
 
+
 .slide::before {
-  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -58,86 +88,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 0;
 }
 
-.form-box {
-  position: absolute;
-  top: 66%; /* Adjusted to avoid overlapping */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.9);
-  padding: 8px;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  z-index: 2;
-  width: 70%;
-  max-width: 800px;
-  height: auto;
-  font-size: 1.4rem;
-}
-
-.form-box-heading {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.radio-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  color: black;
-}
-
-.form-box * {
-  margin: 0.4vw;
-}
-
-.form-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 0px;
-  margin-bottom: 15px;
-}
-
-.input-icon {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.form-control {
-  height: 45px; /* Adjusted height for all form elements */
-  padding: 10px 10px 10px 30px; /* Adjust padding to make room for the icon */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-  text-indent: 10px;
-  box-sizing: border-box; 
-}
-
-.input-icon svg {
-  position: absolute;
-  left: 10px; /* Position icon inside input field */
-  color: #999;
-}
-
-button.form-control {
-  padding: 0; /* Remove default padding for button */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color:rgb(241, 72, 72);
-  color: white;
-  cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-}
-
-button.form-control:hover {
-  background-color: #ff4c3b;
-  
-}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -155,11 +105,6 @@ button.form-control:hover {
 
   .slide-content p {
     font-size: 1.25rem;
-  }
-
-  .form-box {
-    top: 60%;
-    width: 90%;
   }
 }
 
@@ -182,26 +127,7 @@ button.form-control:hover {
     font-size: 1rem;
   }
 
-  .form-box {
-    top: 60%;
-    width: 90%;
-    height: auto;
-    padding: 10px;
-  }
 
-  .form-row {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .form-row > * {
-    flex: 1 1 calc(50% - 10px); /* 2 elements per row with 10px gap */
-    margin-bottom: 10px;
-  }
-
-  button.form-control {
-    width: 100%;
-  }
 }
 
 @media (max-width: 480px) {
@@ -211,24 +137,4 @@ button.form-control:hover {
     top: 0;
   }
 
-  .form-box {
-    top: 65%;
-    width: 90%;
-    height: auto;
-    padding: 5px;
-  }
-
-  .form-row {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .form-row > * {
-    flex: 1 1 calc(50% - 10px); /* 2 elements per row with 10px gap */
-    margin-bottom: 10px;
-  }
-
-  button.form-control {
-    width: 100%;
-  }
 }

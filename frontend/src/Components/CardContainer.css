@@ -1,41 +1,120 @@
-.Container {
-    max-width: 1200px;
-    margin: 0 auto;
+/* Container Styling */
+.noonmytrip-container {
+    font-family: Arial, sans-serif;
     padding: 20px;
-    text-align: center; /* Center align the heading */
-    margin-top: 20px;
-}
+    margin-top: 100px;
+  }
+  
+  /* Major Airlines Section */
+  .airlines-section {
+    border-radius: 12px;
+    padding: 20px 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 
-.heading1 {
-    font-size: 3rem; /* Adjust font size */
-    margin-bottom: 20px; /* Add space below the heading */
-    color:#ec3237; 
-    font-family: 'Roboto', sans-serif; /* Modern font style */
-    margin-bottom: 20px; /* Remove duplicate margin-bottom */
-}
-
-.heading2 {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-    margin-bottom: 20px; /* Add space below the heading */
-    color: #333;
-    font-family: 'Roboto', sans-serif; /* Modern font style */
-    margin-bottom: 20px; /* Remove duplicate margin-bottom */
-}
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible grid layout */
-    gap: 20px;
-    justify-items: center;
-}
-
-@media (max-width: 600px) {
-    .heading1 {
-        font-size: 2rem; /* Adjust font size for smaller screens */
-        color:black;
-    }
-
-    .heading2 {
-        font-size: 1.25rem; /* Adjust font size for smaller screens */
-    }
-}
+  .airlines-subsection{
+    background-color: #f9f9f9;
+    display: flex;
+    gap: 150px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    justify-content: center;
+    padding: 20px 25px;
+    border-radius: 30px;
+    min-height: 120px;
+    max-width: 1200px;
+  }
+  
+  .airlines-section h3 {
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .airlines-section p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .airlines-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .airlines-logos img {
+    min-height: 50px;
+    max-height:100px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .airlines-logos img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Features Section */
+  .features-section {
+    text-align: center;
+    /* background-color: gray; */
+  }
+  
+  .features-section h2 {
+    font-size: 38px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .features-section .highlight {
+    color: red;
+  }
+  
+  .features-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+  
+  .feature-item {
+    border: 1px solid #585353;
+    border-radius: 15px;
+    padding: 17px;
+    width: 230px;
+    text-align: left;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-item h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item p {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  /* Placeholder for Icons */
+  .icon-percent,
+  .icon-filter,
+  .icon-track,
+  .icon-more {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  

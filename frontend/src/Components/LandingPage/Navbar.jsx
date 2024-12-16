@@ -2,17 +2,15 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-// import logo from "../../assets/Slider Images/logo.png"
+import logo from "../../assets/Slider Images/CardImages/logo.svg";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <h1>
-          <span className="logo-part1">Noon</span>
-          <span className="logo-part2">MyTrip</span>
+          <img src={logo} alt="" />
         </h1>
-        <p>Travels and Tourism Pvt. Ltd</p>
       </div>
       <ul className="navbar-links">
         <li><a href="#home" className="active">Home</a></li>
