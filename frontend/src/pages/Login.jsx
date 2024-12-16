@@ -8,35 +8,26 @@ const Login = () => {
         <div className="manual-login">
           <h2>Login</h2>
           <p>Login to access your global account</p>
+
           <p>Email</p>
           <input className="Inputs" type="text" />
+
           <p>Password</p>
           <input className="Inputs" type="password" />
-          <div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <div>
-                <input className="Inputs" type="checkbox" name="remember-me" id="" />
-                <p>Remember me</p>
-=======
-            <div className="remember-me">
-              <input type="checkbox" name="remember-me" id="" />
-              <label>Remember me</label>
->>>>>>> 92dc0ffc62ee9688833ef8cd1eaeca681750413a
-=======
-            <div className="remember-me">
-              <input type="checkbox" name="remember-me" id="" />
-              <label>Remember me</label>
->>>>>>> 92dc0ffc62ee9688833ef8cd1eaeca681750413a
-            </div>
-            <a href="">Forgot Password</a>
+
+          <div className="remember-me">
+            <input type="checkbox" name="remember-me" id="remember-me" />
+            <label htmlFor="remember-me">Remember me</label>
+            <a href="#" className="forgot-password">Forgot Password?</a>
           </div>
+
           <button className="login">Login</button>
-          <div>
-            <p>Don't have an account </p>
-            <a href="">Sign up</a>
+
+          <div className="signup-link">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
           </div>
         </div>
+
         <div className="authenticate">
           <p>Or login with</p>
           <div className="social-login">

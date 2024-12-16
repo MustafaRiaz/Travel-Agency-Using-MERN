@@ -17,7 +17,6 @@ function App() {
 
   return (
     <>
-<<<<<<< HEAD
       <Slide />
       <CardContainer />
       <OurServices />
@@ -25,13 +24,9 @@ function App() {
       <FavouriteHotel />
       <CustomerReviews />
       <Footer />
-=======
+
       <Login />
       {/* <BookingComponent /> */}
-<<<<<<< HEAD
->>>>>>> 92dc0ffc62ee9688833ef8cd1eaeca681750413a
-=======
->>>>>>> 92dc0ffc62ee9688833ef8cd1eaeca681750413a
     </>
   );
 }
