@@ -1,3 +1,4 @@
+// Payment.jsx
 import React from 'react';
 import './payment.css';
 
@@ -6,9 +7,10 @@ const Payment = () => {
     <div className="payment-screen">
       {/* Top Navigation */}
       <div className="navigation">
-        <span className="nav-item active">Flights</span>
+        <img src="../assets/payment images/image.png" alt="" />
+        <span className="nav-item">Flights</span>
         <span className="nav-item">Passengers</span>
-        <span className="nav-item">Payments</span>
+        <span className="nav-item active">Payments</span>
         <span className="nav-item">Confirm</span>
       </div>
 
@@ -17,41 +19,38 @@ const Payment = () => {
         {/* Payment Methods */}
         <div className="payment-methods">
           <h2>Choose your payment method</h2>
-          <p>
+          <p className="instructions">
             Make sure the names you enter exactly match your passport, and please use English characters only.
-            Names can’t be changed once you have completed your booking.
           </p>
 
           <form className="payment-form">
+            {/* Payment Options */}
             <label className="payment-option">
               <input type="radio" name="payment" />
-              Stripe Payment
+              <span className="payment-label">Stripe Payment</span>
+            </label>
+            <label className="payment-option">
+              <input type="radio" name="payment" />
+              <span className="payment-label">EasyPaisa</span>
+            </label>
+            <label className="payment-option">
+              <input type="radio" name="payment" />
+              <span className="payment-label">JazzCash</span>
+            </label>
+            <label className="payment-option">
+              <input type="radio" name="payment" />
+              <span className="payment-label">Bank Transfer</span>
             </label>
 
+            {/* Debit Card Details */}
             <label className="payment-option">
               <input type="radio" name="payment" />
-              EasyPaisa
-            </label>
-
-            <label className="payment-option">
-              <input type="radio" name="payment" />
-              JazzCash
-            </label>
-
-            <label className="payment-option">
-              <input type="radio" name="payment" />
-              Bank Transfer
-            </label>
-
-            {/* Debit Card Option */}
-            <label className="payment-option">
-              <input type="radio" name="payment" />
-              Debit Card
+              <span className="payment-label">Debit Card</span>
             </label>
 
             <div className="card-details">
               <input type="text" placeholder="Name on card" />
-              <input type="text" placeholder="Card Number" />
+              <input type="text" placeholder="0000 0000 0000 0000" />
               <div className="card-row">
                 <input type="text" placeholder="MM / YY" />
                 <input type="text" placeholder="CVC" />

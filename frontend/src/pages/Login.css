@@ -1,203 +1,144 @@
-.name-inputs {
-  display: flex;
-  gap: 20px; /* Space between inputs */
-}
-
-.name-inputs div {
-  flex: 1;
-}
-
-/* Login.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
-
-body, html {
+/* General Container */
+body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Disable horizontal scrolling */
-  width: 100%; /* Ensure body width matches the viewport width */
-  box-sizing: border-box; /* Include padding and border in width calculations */
 }
-  
-  .login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
-  }
 
-  
-  .login-details {
-    width: 200vh; /* Adjust width if needed to fit within the viewport */
-    max-width: 500px; /* Limit maximum width */
-    padding: 40px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* box-shadow: #555555; */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
 }
-  
-  .remember-me {
-    display: inline-flex; /* Ensures the elements are aligned horizontally */
-    align-items: center; /* Aligns items vertically in the center */
-    gap: 8px; /* Adds space between the checkbox and text */
-  }
 
-  .remember-me input[type="checkbox"] {
-      margin: 0; /* Removes any extra default margin around the checkbox */
-      vertical-align: middle; /* Ensures the checkbox is vertically aligned with the text */
-  }
+/* Title & Subtitle */
+.login-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 5px 4px;
+}
 
-  .remember-me label {
-      margin: 0; /* Ensures no additional margin on the label text */
-      font-size: .8rem; /* Adjust font size if needed to ensure alignment */
-      vertical-align: middle; /* Matches the checkbox alignment */
-      /* font-weight: 200; */
-  }
+.login-subtitle {
+  color: #737377;
+  font-size: 14px;
+  margin: 0 0 20px 4px;
+}
 
+/* Input Styling */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
 
-  
-  .manual-login {
-    margin-bottom: 20px;
-  }
-  
-  .manual-login h2 {
-    font-size: 1.8rem;
-    color: #333333;
-    margin-bottom: 10px;
-  }
-  
-  .manual-login p {
-    margin: 10px 0 5px;
-    font-size: 0.9rem;
-    color: #555555;
-  }
-  
-  .Inputs[type="text"],
-  .Inputs[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    color: #333333;
-  }
-  
-  .manual-login div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 15px 0;
-  }
-  
-  .Inputs[type="checkbox"] {
-    margin-right: 5px;
-  }
+.input-container label {
+  font-size: 11px;
+  margin-bottom: 5px;
+  color: #737377;
+}
 
-  .social-login {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .social-button {
-    border: none;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .social-button i {
-    margin: 0;
-    color: white;
-  }
-  
-  .social-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background: black;
-  }
-  
-  /* Facebook button with brand color */
-  .social-button.facebook {
-    background-color: #4267B2; /* Facebook Blue */
-  }
-  
-  /* Google button with brand color */
-  .social-button.google {
-    background-color: #DB4437; /* Google Red */
-  }
-  
-  /* Twitter button with brand color */
-  .social-button.twitter {
-    background-color: #1DA1F2; /* Twitter Blue */
-  }
-  
-  
-  button.login {
-    background-color: #FF0211;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 15px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    min-height: 55px;
-    width: 100%;
-  }
-  
-  button.login:hover {
-    background-color: #c20811;
-  }
-  
-  .manual-login a {
-    color: #e50914;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
-  
-  .manual-login a:hover {
-    text-decoration: underline;
-  }
-  
-  .authenticate {
-    text-align: center;
-  }
-  
-  .authenticate p {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-  }
-  
-  .authenticate button {
-    background-color: #ffffff;
-    color: #555555;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin: 0 5px;
-    cursor: pointer;
-    font-size: 0.9rem;
-  }
-  
-  .authenticate button:hover {
-    background-color: #0f0f0f;
+.input-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #737377;
+}
 
-  }
-  
-  
+/* Options: Remember Me & Forgot Password */
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.forgot-password {
+  color: blue;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* Login Button */
+.login-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+/* Sign Up Prompt */
+.signup-prompt {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.signup-link {
+  color: red;
+  text-decoration: none;
+}
+
+/* Separator with Lines */
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.separator span {
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+  color: #737377;
+  font-size: 12px;
+}
+
+.separator span::before,
+.separator span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.separator span::before {
+  left: 0;
+}
+
+.separator span::after {
+  right: 0;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.icon-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
