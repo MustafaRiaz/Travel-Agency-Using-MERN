@@ -4,7 +4,7 @@
     text-align: center;
     /* padding: 20px 10px; */
     font-family: Arial, sans-serif;
-    height: 100vh;
+    height: 112vh;
     margin-bottom: 100px;
 }
 
@@ -95,4 +95,5 @@
     text-align: left;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 10%;
 }

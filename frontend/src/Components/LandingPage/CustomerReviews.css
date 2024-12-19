@@ -3,10 +3,17 @@
   text-align: center;
   padding: 20px;
   font-family: Arial, sans-serif;
+  height: 80vh;
+  display: flex; /* Use flexbox for vertical alignment */
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
 }
 
 .customer-reviews h2 {
-  margin-bottom: 20px;
+  font-size: 38px;
+  margin-bottom: 70px;
+  font-weight: 600;
 }
 
 .reviews-container {

@@ -1,15 +1,21 @@
-
 .favorite-hotels {
-  text-align: center;
+  text-align: center; /* Align text and child elements */
   padding: 20px;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex; /* Use flexbox for vertical alignment */
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+  margin: 0 auto;
 }
 
 .favorite-hotels h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 60px;
 }
 
 .favorite-hotels h2 span {

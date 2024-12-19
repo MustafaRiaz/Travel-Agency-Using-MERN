@@ -1,6 +1,9 @@
 // JSX Component
 import React from 'react';
 import './FavouriteHotel.css';
+import image1 from '../../assets/Slider Images/FavouriteHotels/image1.svg';
+import image2 from '../../assets/Slider Images/FavouriteHotels/image2.svg';
+import image3 from '../../assets/Slider Images/FavouriteHotels/image3.svg';
 
 const hotels = [
   {
@@ -8,21 +11,21 @@ const hotels = [
     location: 'Eindhoven, Netherlands',
     rating: 8.4,
     review: 'Very good',
-    image: 'https://via.placeholder.com/300x200', // Replace with actual image URL
+    image: image1, // Replace with actual image URL
   },
   {
     name: 'Ace Hotel Brooklyn',
     location: 'Brooklyn, NY',
     rating: 8.4,
     review: 'Very good',
-    image: 'https://via.placeholder.com/300x200', // Replace with actual image URL
+    image: image2, // Replace with actual image URL
   },
   {
     name: 'Arlo Midtown',
     location: 'New York, NY',
     rating: 8.4,
     review: 'Very good',
-    image: 'https://via.placeholder.com/300x200', // Replace with actual image URL
+    image: image3, // Replace with actual image URL
   },
 ];
 

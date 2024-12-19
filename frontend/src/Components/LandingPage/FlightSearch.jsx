@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./FlightSearch.css"; // Assuming you extract the CSS to a separate file
-import aeroplane from "../../assets/Slider Images/FlightBooking/aeroplane.png"; 
-
+import aeroplaneIcon from "../../assets/Slider Images/FlightBooking/aeroplane.png";
+import hotelIcon from "../../assets/Slider Images/FlightBooking/hotel.png"; // Load hotel icon
+import mapMarkerIcon from "../../assets/Slider Images/FlightBooking/From.png"; // Load map marker icon
 
 const FlightSearch = () => {
   const [activeTab, setActiveTab] = useState("one-way");
@@ -13,27 +14,27 @@ const FlightSearch = () => {
   return (
     <div className="container">
       {/* Top Buttons */}
-      <button className="top-button">Flights</button>
-      <div className="top-button-2"></div>
-      <button className="top-button-3">Hotels</button>
+      <div className="top-buttons">
+        <button className="top-button">
+          <img src={aeroplaneIcon} alt="Flights" className="icon" />
+          Flights
+        </button>
+        <div className="top-button-2"></div>
+        <button className="top-button-3">
+          <img src={hotelIcon} alt="Hotels" className="icon" />
+          Hotels
+        </button>
+      </div>
+
       {/* Second Row */}
       <div className="trip-buttons">
-        <button
-          className={activeTab === "one-way" ? "active" : ""}
-          onClick={() => handleTabClick("one-way")}
-        >
+        <button className={activeTab === "one-way" ? "active" : ""} onClick={() => handleTabClick("one-way")}>
           One-way
         </button>
-        <button
-          className={activeTab === "round-trip" ? "active" : ""}
-          onClick={() => handleTabClick("round-trip")}
-        >
+        <button className={activeTab === "round-trip" ? "active" : ""} onClick={() => handleTabClick("round-trip")}>
           Round-trip
         </button>
-        <button
-          className={activeTab === "multi-city" ? "active" : ""}
-          onClick={() => handleTabClick("multi-city")}
-        >
+        <button className={activeTab === "multi-city" ? "active" : ""} onClick={() => handleTabClick("multi-city")}>
           Multi-city
         </button>
       </div>
@@ -43,23 +44,23 @@ const FlightSearch = () => {
         {/* From */}
         <div className="form-group">
           <label htmlFor="from">
-            <img  className="fas fa-map-marker-alt"></img>
+            <img src={mapMarkerIcon} alt="From" className="icon" />
           </label>
-          <input type="text" id="from" placeholder="From" />
+          <input type="text" id="from" placeholder="Lahore, Pakistan" />
         </div>
 
         {/* To */}
         <div className="form-group">
           <label htmlFor="to">
-            <i className="fas fa-map-marker"></i> {/* Replace with an appropriate icon */}
+            <img src={mapMarkerIcon} alt="To" className="icon" />
           </label>
-          <input type="text" id="to" placeholder="To" />
+          <input type="text" id="to" placeholder="United Arab Emirates" />
         </div>
 
         {/* Departure */}
         <div className="form-group">
           <label htmlFor="departure">
-            <i className="fas fa-plane-departure"></i> {/* Replace with an appropriate icon */}
+            <img src={mapMarkerIcon} alt="Departure" className="icon" />
           </label>
           <input type="date" id="departure" />
         </div>
@@ -67,12 +68,11 @@ const FlightSearch = () => {
         {/* Return */}
         <div className="form-group">
           <label htmlFor="return">
-            <i className="fas fa-plane-arrival"></i> {/* Replace with an appropriate icon */}
+            <img src={mapMarkerIcon} alt="Return" className="icon" />
           </label>
           <input type="date" id="return" />
         </div>
       </div>
-
 
       {/* Fourth Row */}
       <div className="footer-row">
@@ -97,6 +97,7 @@ const FlightSearch = () => {
         <button className="search-btn">Search Flight</button>
       </div>
     </div>
+
   );
 };
 
