@@ -1,17 +1,26 @@
-/* General Container */
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
 .login-container {
   max-width: 400px;
   margin: 50px auto;
+  font-family: "Arial, sans-serif";
   text-align: left;
   padding: 20px;
   box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.1);
 }
+.name-inputs {
+  display: flex;
+  gap: 20px; /* Space between inputs */
+}
+
+.name-inputs div {
+  flex: 1;
+}
+
+/* Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+
 
 /* Title & Subtitle */
 .login-title {

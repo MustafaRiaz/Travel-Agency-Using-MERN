@@ -10,7 +10,6 @@ import FavouriteHotel from './Components/LandingPage/FavouriteHotel.jsx';
 import SubscribeComponent from './Components/LandingPage/Subscription.jsx';
 import Login from './pages/Login.jsx';
 import SignUp from './pages/Signup.jsx';
-import Payment from './pages/Payments.jsx'
 
 
 function App() {
@@ -34,7 +33,6 @@ function App() {
         } />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/payment" element={<Payment />} />
       </Routes>
     </Router>
   );
