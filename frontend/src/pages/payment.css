@@ -5,6 +5,45 @@ body {
   padding: 0;
 }
 
+/* Navigation Styling */
+.navigation {
+  position: relative; /* Makes it a reference point for absolute elements */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 55vh; /* Adjust the height as needed */
+  background-color: #f2f2f2;
+  overflow: hidden;
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.navigation img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales properly */
+  z-index: 0; /* Places the image behind the spans */
+}
+
+.nav-item {
+  position: relative;
+  z-index: 1; /* Ensures spans appear over the image */
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  justify-content: flex-start; /* Align content to the left */
+  width: 278px; /* Adjust width as needed */
+  height: 48px;
+}
 
 .payment-screen {
   display: flex;
@@ -13,22 +52,10 @@ body {
 }
 
 /* Navigation */
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  background-color: #f2f2f2;
-  padding: 15px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.nav-item {
-  font-weight: 500;
-  color: gray;
-}
 
 .nav-item.active {
-  color: black;
-  border-bottom: 2px solid #800080;
+  color: white;
+  border-bottom: 2px solid red;
 }
 
 /* Content */
@@ -36,10 +63,13 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  align-items: flex-start;
+  margin: 30px 20px 0;
+  /* width: 70% ; */
 }
 
 .payment-methods, .trip-details {
-  width: 48%;
+  width: 60%;
 }
 
 .instructions {
@@ -50,11 +80,20 @@ body {
 .payment-option {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 10px 0;
+  border: 1px solid #E4E4EA;
+  padding: 15px 10px;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .payment-label {
   margin-left: 10px;
+}
+
+.card-details{
+
 }
 
 .card-details input {
@@ -67,6 +106,7 @@ body {
 
 .card-row {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -74,6 +114,7 @@ body {
   display: flex;
   align-items: center;
   margin: 10px 0;
+  gap: 10px;
 }
 
 .continue-button {
@@ -88,21 +129,65 @@ body {
 
 /* Trip Details */
 .trip-details {
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   padding: 20px;
   border-radius: 5px;
+  width: 30%;
+  background-color: #FBFBFC;
+  border-radius: 20px;
 }
 
+.btns{
+  display: flex;
+  /* justify-content: space-between; */
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.btns .in-active{
+  color: #99989F;
+  font-weight: 300;
+}
+
+.btns .active{
+  background-color: #E7E7F0;
+}
+
+hr{
+  color: #D7D6E0;
+}
+
+.btns button{
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #0F0B69;
+  font-size: large;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
 .details-row {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
   font-size: 14px;
+  color: #5A5A5E;
+}
+
+.details-row .date-time{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .details-row.total {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
+}
+
+.details-row .bolds{
+  font-weight: 600;
 }
 
 /* Footer */
