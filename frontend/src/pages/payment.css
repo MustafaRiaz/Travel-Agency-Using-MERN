@@ -1,109 +1,238 @@
 /* General */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .payment-screen {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  /* Navigation */
-  .navigation {
-    display: flex;
-    justify-content: space-around;
-    background-color: #f2f2f2;
-    padding: 15px 0;
-  }
-  
-  .nav-item {
-    font-weight: 500;
-    color: gray;
-  }
-  
-  .nav-item.active {
-    color: black;
-    border-bottom: 2px solid #000;
-  }
-  
-  /* Content */
-  .content {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .payment-methods, .trip-details {
-    width: 48%;
-  }
-  
-  .payment-option {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  
-  .card-details input {
-    display: block;
-    margin: 10px 0;
-    padding: 8px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .card-row {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .save-card {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .continue-button {
-    background-color: #800080;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 15px;
-  }
-  
-  /* Trip Details */
-  .trip-details {
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
-  }
-  
-  .details-row {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-  }
-  
-  .details-row.total {
-    font-weight: bold;
-  }
-  
-  hr {
-    border: 0.5px solid #ccc;
-  }
-  
-  /* Footer */
-  .footer {
-    text-align: center;
-    margin-top: auto;
-    padding: 15px;
-    background-color: #f9f9f9;
-  }
-  
-  .footer-logos img {
-    height: 30px;
-    margin: 0 5px;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Styling */
+.navigation {
+  position: relative; /* Makes it a reference point for absolute elements */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 55vh; /* Adjust the height as needed */
+  background-color: #f2f2f2;
+  overflow: hidden;
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.navigation img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales properly */
+  z-index: 0; /* Places the image behind the spans */
+}
+
+.nav-item {
+  position: relative;
+  z-index: 1; /* Ensures spans appear over the image */
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  justify-content: flex-start; /* Align content to the left */
+  width: 278px; /* Adjust width as needed */
+  height: 48px;
+}
+
+.payment-screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation */
+
+.nav-item.active {
+  color: white;
+  border-bottom: 2px solid red;
+}
+
+/* Content */
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: flex-start;
+  margin: 30px 20px 0;
+  /* width: 70% ; */
+}
+
+.payment-methods, .trip-details {
+  width: 60%;
+}
+
+.instructions {
+  font-size: 14px;
+  color: #555;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  border: 1px solid #E4E4EA;
+  padding: 15px 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.payment-label {
+  margin-left: 10px;
+}
+
+.last-option{
+  border: 1px solid #E4E4EA;
+}
+
+.card-details{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 15px; /* Space between grid items */
+  margin-top: 20px;
+  margin-left: 10px;
+  border: 1px solid #E4E4EA;
+}
+
+.card-details input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.save-card {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+.cvc-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 8px;
+}
+
+.card-details input{
+  padding: 15px;
+}
+
+.continue-button {
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #0F0B69;
+  font-size: large;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  background-color: #E7E7F0;
+  cursor: pointer;
+}
+
+/* Trip Details */
+.trip-details {
+  /* border: 1px solid #ddd; */
+  padding: 20px;
+  border-radius: 5px;
+  width: 30%;
+  background-color: #FBFBFC;
+  border-radius: 20px;
+}
+
+.btns{
+  display: flex;
+  /* justify-content: space-between; */
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.btns .in-active{
+  color: #99989F;
+  font-weight: 300;
+}
+
+.btns .active{
+  background-color: #E7E7F0;
+}
+
+hr{
+  color: #D7D6E0;
+}
+
+.btns button{
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #0F0B69;
+  font-size: large;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+.details-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #5A5A5E;
+}
+
+.details-row .date-time{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.details-row.total {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.details-row .bolds{
+  font-weight: 600;
+}
+
+/* Footer */
+.center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.center-logos img {
+  height: 30px;
+  margin: 0 10px;
+} 
