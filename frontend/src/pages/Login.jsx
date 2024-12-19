@@ -23,7 +23,9 @@ function LoginComponent() {
     console.log("Form Data Submitted: ", formData);
   };
 
+
   return (
+
     <div className="login-container">
       <h2 className="login-title">Login</h2>
       <p className="login-subtitle">Login to access your Golobe account</p>

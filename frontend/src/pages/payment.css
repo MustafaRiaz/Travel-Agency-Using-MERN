@@ -1,0 +1,109 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .payment-screen {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Navigation */
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 15px 0;
+  }
+  
+  .nav-item {
+    font-weight: 500;
+    color: gray;
+  }
+  
+  .nav-item.active {
+    color: black;
+    border-bottom: 2px solid #000;
+  }
+  
+  /* Content */
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .payment-methods, .trip-details {
+    width: 48%;
+  }
+  
+  .payment-option {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .card-details input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .card-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .save-card {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .continue-button {
+    background-color: #800080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  /* Trip Details */
+  .trip-details {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .details-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .details-row.total {
+    font-weight: bold;
+  }
+  
+  hr {
+    border: 0.5px solid #ccc;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .footer-logos img {
+    height: 30px;
+    margin: 0 5px;
+  }
+  
