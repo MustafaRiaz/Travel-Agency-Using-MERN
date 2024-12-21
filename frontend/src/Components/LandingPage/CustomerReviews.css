@@ -1,44 +1,93 @@
-
 .customer-reviews {
   text-align: center;
-  padding: 20px;
   font-family: Arial, sans-serif;
-  height: 80vh;
+  height: auto; /* Allow the height to adjust dynamically */
   display: flex; /* Use flexbox for vertical alignment */
   flex-direction: column; /* Align items in a column */
   justify-content: center; /* Vertically center the content */
   align-items: center; /* Horizontally center the content */
+  box-sizing: border-box;
+  height: 80vh;
+  padding: 20px; /* Add space around the container */
+  position: relative; /* Needed for absolute positioning of elements inside */
 }
 
 .customer-reviews h2 {
   font-size: 38px;
-  margin-bottom: 70px;
+  margin-bottom: 20px; /* Reduced margin for better spacing */
   font-weight: 600;
+  position: relative;
+  bottom: 50px; /* Position it above the stars */
+  left: 20px; /* Align it to the left */
 }
 
 .reviews-container {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Allow wrapping for responsive layout */
 }
 
 .review-card {
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 20px;
-  max-width: 350px;
-  max-height: 350px;
+  padding: 15px; /* Slightly increased padding */
+  width: 100%; /* Default to full width */
+  max-width: 350px; /* Restrict max width */
+  height: auto; /* Let the height adjust dynamically */
   text-align: left;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; /* Needed for absolute positioning of stars */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-text {
+  margin-bottom: 20px; /* Spacing for review text */
+}
+
+.review-footer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.review-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-info {
+  text-align: left;
 }
 
 .review-card h3 {
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
 }
 
 .stars {
   color: #ffa500;
-  margin-top: 10px;
+  margin-top: 5px;
+}
+
+.stars span {
+  margin-right: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .review-card {
+    width: 45%; /* Adjust width for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .review-card {
+    width: 30%; /* Adjust width for larger screens */
+  }
 }

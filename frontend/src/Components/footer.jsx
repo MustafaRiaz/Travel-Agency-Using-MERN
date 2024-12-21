@@ -1,51 +1,62 @@
 import React from 'react';
-import './footer.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import './Footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-section about-us">
-          <h2>About Us</h2>
-          <p>We are a leading travel agency dedicated to providing the best travel experiences around the world. Join us and explore new destinations with ease and comfort.</p>
-        </div>
-        <div className="footer-section quick-links">
-          <h2>Quick Links</h2>
+      <div className="footer-content">
+        <div className="footer-section">
+          <h4>Company</h4>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li>About MoonMyTrip</li>
+            <li>Press</li>
+            <li>Careers</li>
+            <li>Contact Us</li>
           </ul>
         </div>
-        <div className="footer-section contact-us">
-          <h2>Contact Us</h2>
-          <p>Email: info@travelagency.com</p>
-          <p>Phone: +123 456 7890</p>
-          <p>Address: 123 Travel St, Adventure City</p>
+        <div className="footer-section">
+          <h4>Learn More</h4>
+          <ul>
+            <li>Book on MoonMyTrip</li>
+            <li>Affiliates</li>
+            <li>Advertise</li>
+            <li>Hoteliers</li>
+            <li>Data Privacy Policy</li>
+            <li>Terms</li>
+          </ul>
         </div>
-        <div className="footer-section social-media">
-          <h2>Follow Us</h2>
-          <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFacebook} />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-          </div>
+        <div className="footer-section">
+          <h4>Explore</h4>
+          <ul>
+            <li>Airport Directory</li>
+            <li>Airlines Directory</li>
+            <li>Flight Schedules</li>
+            <li>Hotel Chains</li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h4>Download</h4>
+          <ul>
+            <li>Wego App (iOS)</li>
+            <li>Wego App (Android)</li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h4>Contact Us</h4>
+          <p>Call: 03 111 543 111</p>
+          <p>Email: info@moonmytrip.com</p>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Travel Agency. All rights reserved.</p>
+        <div className="footer-bottom-text">
+          <p>© 2024 MoonMyTrip Travels Pvt Ltd</p>
+        </div>
+        <div className="footer-social-icons">
+          <a href="#" className="social-icon"></a>
+          <a href="#" className="social-icon"></a>
+          <a href="#" className="social-icon"></a>
+          <a href="#" className="social-icon"></a>
+        </div>
       </div>
     </footer>
   );

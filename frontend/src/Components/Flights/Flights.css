@@ -1,0 +1,317 @@
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Flights.css */
+.flight-searchContainer {
+    width: 100%; /* Controls the width of the container */
+    width: 100%;
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Optional padding */
+    display: flex;
+    justify-content: center; /* Centers the FlightSearch component horizontally */
+    box-sizing: border-box;
+  }
+  
+
+  
+  .navbarContainer {
+    position: absolute;
+  }
+  
+  /* Navigation Styling */
+  .navigation {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 65vh;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    padding: 15px 0;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .navigation img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .nav-item {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 278px;
+    height: 48px;
+    cursor: pointer;
+  }
+  
+  .nav-item.active {
+    color: white;
+    border-bottom: 2px solid red; /* Change the color to red when active */
+  }
+  
+  /* Icon Styling */
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .flight-screen {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Content */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-start;
+    margin: 30px 20px 0;
+  }
+  
+  .payment-methods, .trip-details {
+    width: 48%; /* Adjust width for responsiveness */
+  }
+  
+  .instructions {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .payment-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    border: 1px solid #E4E4EA;
+    padding: 15px 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .payment-label {
+    margin-left: 10px;
+  }
+  
+  .last-option {
+    border: 1px solid #E4E4EA;
+  }
+  
+  .card-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1px solid #E4E4EA;
+  }
+  
+  .card-details input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .card-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .save-card {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+  }
+  
+  .cvc-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 8px;
+  }
+  
+  .card-details input {
+    padding: 15px;
+  }
+  
+  .continue-button {
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #0F0B69;
+    font-size: large;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E7E7F0;
+    cursor: pointer;
+  }
+  
+  /* Trip Details */
+  .trip-details {
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    background-color: #FBFBFC;
+    border-radius: 20px;
+  }
+  
+  .btns {
+    display: flex;
+    margin: 20px 0;
+    gap: 20px;
+  }
+  
+  .btns .in-active {
+    color: #99989F;
+    font-weight: 300;
+  }
+  
+  .btns .active {
+    background-color: #E7E7F0;
+  }
+  
+  hr {
+    color: #D7D6E0;
+  }
+  
+  .btns button {
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #0F0B69;
+    font-size: large;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .details-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #5A5A5E;
+  }
+  
+  .details-row .date-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .details-row.total {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .details-row .bolds {
+    font-weight: 600;
+  }
+  
+  /* Footer */
+  .center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .center-logos img {
+    height: 30px;
+    margin: 0 10px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .payment-methods, .trip-details {
+      width: 45%; /* Adjust width for medium screens */
+    }
+  
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .trip-details {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .payment-methods, .trip-details {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  
+    .btns {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .card-details {
+      grid-template-columns: 1fr; /* Stack card details */
+    }
+  
+    .continue-button {
+      width: 100%; /* Make continue button full width */
+    }
+  
+    .save-card {
+      flex-direction: column; /* Stack save card details */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-item {
+      font-size: 16px; /* Smaller font size for mobile */
+      padding-bottom: 8px;
+      width: auto;
+    }
+  
+    .content {
+      margin: 20px 10px;
+    }
+  
+    .btns button {
+      font-size: 14px; /* Smaller button size */
+      padding: 15px;
+    }
+  }
+  

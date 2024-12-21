@@ -1,4 +1,9 @@
 
+/* Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+
 .login-container {
   max-width: 400px;
   margin: 50px auto;
@@ -16,9 +21,7 @@
   flex: 1;
 }
 
-/* Login.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
 
 
 

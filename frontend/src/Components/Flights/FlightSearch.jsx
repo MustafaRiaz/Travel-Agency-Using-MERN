@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./FlightSearch.css"; // Assuming you extract the CSS to a separate file
-import aeroplaneIcon from "../../assets/Slider Images/FlightBooking/aeroplane.png";
-import hotelIcon from "../../assets/Slider Images/FlightBooking/hotel.png"; // Load hotel icon
 import mapMarkerIcon from "../../assets/Slider Images/FlightBooking/From.png"; // Load map marker icon
 import doubleArrows from "../../assets/Slider Images/FlightBooking/doubleArrows.png"; // Load map marker icon
 
@@ -13,20 +11,7 @@ const FlightSearch = () => {
   };
 
   return (
-    <div className="container">
-      {/* Top Buttons */}
-      <div className="top-buttons">
-        <button className="top-button">
-          <img src={aeroplaneIcon} alt="Flights" className="icon" />
-          Flights
-        </button>
-        <div className="top-button-2"></div>
-        <button className="top-button-3">
-          <img src={hotelIcon} alt="Hotels" className="icon" />
-          Hotels
-        </button>
-      </div>
-
+    <div className="flight-search-container">
       {/* Second Row */}
       <div className="trip-buttons">
         <button className={activeTab === "one-way" ? "active" : ""} onClick={() => handleTabClick("one-way")}>
@@ -50,11 +35,6 @@ const FlightSearch = () => {
             <span>From</span> {/* Text added after icon */}
           </label>
           <input type="text" id="from" placeholder="Lahore, Pakistan" />
-        </div>
-
-        {/* Overlay Icon */}
-        <div className="overlay-icon">
-          <img src={doubleArrows} alt="Swap" className="overlay-img" />
         </div>
 
         {/* To */}

@@ -10,7 +10,6 @@ lerna-debug.log*
 
 # Ignore node_modules in both root and frontend directories
 node_modules/
-frontend/node_modules/
 
 # Other directories to ignore
 dist

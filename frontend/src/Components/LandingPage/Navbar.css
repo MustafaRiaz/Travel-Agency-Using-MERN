@@ -1,5 +1,3 @@
-
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -14,13 +12,18 @@
   z-index: 2;
 }
 
+.navbar-toggle{
+  visibility: hidden;
+}
+
+
 .navbar-logo h1 {
   margin: 0;
   font-size: 24px;
 }
 
-.navbar-logo{
-  margin-left:130px;
+.navbar-logo {
+  margin-left: 130px;
 }
 
 .navbar-logo .logo-part1 {
@@ -35,7 +38,6 @@
   margin: 0;
   font-size: 12px;
   color: gray;
-  
 }
 
 .navbar-links {
@@ -71,11 +73,93 @@
   color: white !important;
   padding: 20px 30px;
   border-radius: 40px;
-  /* min-height: 50px; */
-
   transition: background-color 0.3s;
 }
 
 .register-button:hover {
   background-color: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .navbar{
+    overflow: scroll;
+  }
+  .navbar-logo {
+    margin-left: 30px; /* Adjust logo alignment for smaller screens */
+  }
+
+  .navbar-links {
+    margin-right: 20px; /* Reduce space for smaller screens */
+  }
+
+  .navbar-links li {
+    margin: 0 10px; /* Less space between items */
+  }
+
+  .navbar-links a {
+    font-size: 14px; /* Smaller text for navbar links */
+  }
+
+  .register-button, .signup {
+    padding: 12px 14px; /* Smaller button size */
+  }
+}
+
+@media (max-width: 856px) {
+  .navbar {
+    flex-direction: row;
+    align-items: flex-start; /* Stack navbar items vertically */
+    padding: 10px; /* Add more padding for small screens */
+  }
+
+  .navbar-toggle {
+    visibility: visible;
+  }
+
+  .navbar-logo {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .navbar-links {
+    display: none; /* Hide navbar links on small screens */
+    flex-direction: column; /* Stack links vertically */
+    margin-right: 0;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show navbar links when active */
+  }
+
+  .navbar-links li {
+    margin: 10px 0; /* Adjust spacing between navbar items */
+  }
+
+  .navbar-links a {
+    font-size: 16px;
+  }
+
+  .register-button, .signup {
+    padding: 5px 10px;
+    margin-top: 10px; /* Add margin for better spacing */
+  }
+  
+  /* Add a toggle button for the navbar links on small screens */
+  .navbar-toggle {
+    display: block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .navbar-toggle:hover {
+    background-color: darkred;
+  }
 }
