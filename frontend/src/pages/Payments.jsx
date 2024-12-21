@@ -8,15 +8,13 @@ import {
   faCreditCard,
   faCheckCircle,
 } from "@fortawesome/free-solid-svg-icons";
-import background_image from "../../assets/payment_images/image.svg";
-import stripeLogo from "../../assets/payment_images/stripe_icon.svg";
-import easypaisaLogo from "../../assets/payment_images/easy_paisa.svg";
-import jazzcashLogo from "../../assets/payment_images/jazz_cash-logo.svg";
-import bankTransferLogo from "../../assets/payment_images/debit_card.svg";
-import visaLogo from "../../assets/payment_images/visa.svg";
-import ublLogo from "../../assets/payment_images/ubl.svg";
-
-
+import background_image from "../assets/payment_images/image.svg";
+// import stripeLogo from "../../assets/payment_images/stripe_icon.svg";
+// import easypaisaLogo from "../../assets/payment_images/easy_paisa.svg";
+// import jazzcashLogo from "../../assets/payment_images/jazz_cash-logo.svg";
+// import bankTransferLogo from "../../assets/payment_images/debit_card.svg";
+// import visaLogo from "../../assets/payment_images/visa.svg";
+// import ublLogo from "../../assets/payment_images/ubl.svg";
 
 const Payment = () => {
   return (
@@ -60,7 +58,7 @@ const Payment = () => {
                 <span className="payment-label">Stripe Payment</span>
               </div>
               <img
-                src={stripeLogo}
+                // src={stripeLogo}
                 alt="Stripe Logo"
                 className="payment-logo"
               />
@@ -72,7 +70,7 @@ const Payment = () => {
                 <span className="payment-label">EasyPaisa</span>
               </div>
               <img
-                src={easypaisaLogo}
+                // src={easypaisaLogo}
                 alt="EasyPaisa Logo"
                 className="payment-logo"
               />
@@ -84,7 +82,7 @@ const Payment = () => {
                 <span className="payment-label">JazzCash</span>
               </div>
               <img
-                src={jazzcashLogo}
+                // src={jazzcashLogo}
                 alt="JazzCash Logo"
                 className="payment-logo"
               />
@@ -95,16 +93,18 @@ const Payment = () => {
                 <input type="radio" name="payment" />
                 <span className="payment-label">Bank Transfer</span>
               </div>
+              <div className="bank-transfer-logos">
               <img
-                src={ublLogo}
+                // src={ublLogo}
                 alt="Bank Transfer Logo"
                 className="payment-logo"
               />
               <img
-                src={alfalahLogo}
+                // src={alfalahLogo}
                 alt="Bank Transfer Logo"
                 className="payment-logo"
               />
+              </div>
             </label>
 
             {/* Debit Card Details */}
@@ -115,7 +115,7 @@ const Payment = () => {
                   <span className="payment-label">Debit Card</span>
                 </div>
                 <img
-                  src={visaLogo}
+                  // src={visaLogo}
                   alt="Visa Logo"
                   className="payment-logo"
                 />
@@ -193,8 +193,17 @@ const Payment = () => {
           </div>
           <hr />
           <div className="details-row total">
-            <span className="bolds">Grand Total</span>
-            <span className="bolds">Rs. 476,058</span>
+            <div className="total-row">
+              <span className="bolds">Grand Total</span>
+              <span className="bolds">Rs. 476,058</span>
+            </div>
+            <div>
+              <span className="grand-total-exp">
+                Includes all taxes, fees, surcharges, and Kiwi.com service fees.
+                Kiwi.com service fees are calculated per passenger and are not
+                refundable.
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -211,7 +220,7 @@ const Payment = () => {
 
       <div className="footer">
         <div className="footer-content">
-          <p>Company</p>
+          <p className="first-footer">Company</p>
           <p>About</p>
           <p>MoonMyTrip</p>
           <p>Press</p>
@@ -220,8 +229,7 @@ const Payment = () => {
           <p>Us</p>
         </div>
         <div className="footer-content">
-          <p>Learn More</p>
-          <p>Learn More</p>
+          <p className="first-footer">Learn More</p>
           <p>Book on MoonMyTrip</p>
           <p>Affiliates</p>
           <p>Advertise</p>
@@ -230,27 +238,27 @@ const Payment = () => {
           <p>Terms</p>
         </div>
         <div className="footer-content">
-          <p>Explore</p>
+          <p className="first-footer">Explore</p>
           <p>Airport Directory</p>
           <p>Airlines Directory</p>
           <p>Flight Schedules</p>
           <p>Hotel Chains</p>
         </div>
         <div className="footer-content">
-          <p>Download</p>
+          <p className="first-footer">Download</p>
           <p>Download</p>
           <p>Wego App (iOS)</p>
           <p>Weg`o App (Android)</p>
         </div>
         <div className="footer-content">
-          <p>Contact Us</p>
+          <p className="first-footer">Contact Us</p>
           <p>Call: 03 111 543 111</p>
           <p>Email: info@noonmytrip.com</p>
         </div>
       </div>
       <hr className="end-line" />
       <div className="footer-links">
-        <p>© 2024 MoonMyTrip. All rights reserved</p>
+        <p>© 2024 NoonMytrip Travels Pvt Ltd</p>
         <div className="social-icons">
           <a href="https://www.facebook.com">
             <img src="facebook.png" alt="Facebook" />
