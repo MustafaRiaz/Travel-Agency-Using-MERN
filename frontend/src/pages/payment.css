@@ -1,6 +1,6 @@
 /* General */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Satoshi', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -166,6 +166,7 @@ body {
   width: 30%;
   background-color: #FBFBFC;
   border-radius: 20px;
+  font-family: 'Satoshi', sans-serif;
 }
 
 .btns{
@@ -230,9 +231,75 @@ hr{
   margin-top: auto;
   padding: 20px;
   background-color: #f9f9f9;
+  font-family: 'Satoshi', sans-serif;
 }
 
 .center-logos img {
   height: 30px;
   margin: 0 10px;
 } 
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: 'Satoshi', sans-serif;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-line{
+  background-color: black;
+  height: 1px;
+  border: none;
+  width: 90%;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.cdnfonts.com/s/85546/Satoshi-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Satoshi';
+  font-style: italic;
+  font-weight: 400;
+  src: url('https://fonts.cdnfonts.com/s/85546/Satoshi-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://fonts.cdnfonts.com/s/85546/Satoshi-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Satoshi';
+  font-style: italic;
+  font-weight: 700;
+  src: url('https://fonts.cdnfonts.com/s/85546/Satoshi-BoldItalic.woff') format('woff');
+}
