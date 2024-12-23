@@ -12,6 +12,7 @@ import Login from './pages/Login.jsx';
 import SignUp from './pages/Signup.jsx';
 import Payment from './pages/Payments.jsx';
 import Confirm from './pages/Confirm.jsx';
+import ConfirmMessage from './pages/confirmMessage.jsx';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/confirm" element={<Confirm />} />
+        <Route path="/message" element={<ConfirmMessage />} />
         
       </Routes>
     </Router>
