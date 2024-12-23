@@ -11,6 +11,7 @@ import SubscribeComponent from './Components/LandingPage/Subscription.jsx';
 import Login from './pages/Login.jsx';
 import SignUp from './pages/Signup.jsx';
 import Payment from './pages/Payments.jsx';
+import Confirm from './pages/Confirm.jsx';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/confirm" element={<Confirm />} />
         
       </Routes>
     </Router>
