@@ -6,16 +6,16 @@ body{
     font-family: 'Satoshi', sans-serif;
 }
 
-.privacy-policy-container{
+.terms-conditions-container{
     width: 100vw;
 }
 
 .head{
-    background-image: url('../assets/privacy_policy/image.svg');
+    background-image: url('../assets/terms_and_conditions/image.svg');
     min-height: max-content;
     height: 550px;
     width: 100%;
-    background-size: cover;
+    background-size: repeat;
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,7 @@ body{
     color: white;
     margin-left: 5%;
     width: 50%;
+    font-weight: 400;
 }
 
 .heading{
@@ -55,19 +56,19 @@ body{
     font-weight: 700;
 }
 
-.privacy-policy .bold{
+.terms-conditions .bold{
     /* font-size: 16px; */
     font-weight: bolder;
     margin-top: 2%;
     color: black;
 }
 
-.privacy-policy p, ul{
+.terms-conditions p, ul{
     font-size: 16px;
     color: #5A5A5E;
 }
 
-.privacy-policy{
+.terms-conditions{
     margin: 2% 10%;
 }
 

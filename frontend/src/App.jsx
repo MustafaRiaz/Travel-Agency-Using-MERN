@@ -14,6 +14,7 @@ import Payment from './pages/Payments.jsx';
 import Confirm from './pages/Confirm.jsx';
 import ConfirmMessage from './pages/confirmMessage.jsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
+import TermsConditions from './pages/TermsConditions.jsx';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Route path="/confirm" element={<Confirm />} />
         <Route path="/message" element={<ConfirmMessage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-conditions" element={<TermsConditions />} />
         
       </Routes>
     </Router>
