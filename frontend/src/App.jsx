@@ -13,6 +13,7 @@ import SignUp from './pages/Signup.jsx';
 import Payment from './pages/Payments.jsx';
 import Confirm from './pages/Confirm.jsx';
 import ConfirmMessage from './pages/confirmMessage.jsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Route path="/payment" element={<Payment />} />
         <Route path="/confirm" element={<Confirm />} />
         <Route path="/message" element={<ConfirmMessage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         
       </Routes>
     </Router>
