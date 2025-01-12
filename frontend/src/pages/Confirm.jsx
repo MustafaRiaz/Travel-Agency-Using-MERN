@@ -33,6 +33,8 @@ function Confirm() {
                 <p className="time">20:20 AM</p>
                 <p className="date">Mon, 12/23</p>
                 <p className="flight-duration">5h 50m</p>
+              </div>
+              <div className="flight-details-bottom">
                 <p className="time">08:15 AM</p>
                 <p className="date">Mon, 12/23</p>
               </div>
