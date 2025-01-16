@@ -10,7 +10,7 @@ import {
   faCreditCard,
   faCheckCircle,
 } from "@fortawesome/free-solid-svg-icons";
-import background_image from "../../../src/assets/payment images/image.svg";
+import background_image from "../../../src/assets/payment_images/image.svg";
 import Footer from "../footer.jsx";
 
 const Flights = () => {
@@ -32,15 +32,13 @@ const Flights = () => {
         {/* Closing the navigation div before FlightSearch */}
       </div>
       <div className="flight-searchContainer">
-        {/* <FlightSearch /> */}
+        <FlightSearch />
       </div>
     </div>
     <div className="flightBody">
         <FlightBody />
     </div>
-    <div className="myfooter">
-        <Footer />
-    </div>
+
     </>
   );
 };

@@ -60,6 +60,7 @@
     display: block;
     margin-bottom: 5px;
     font-weight: 600;
+    text-align: left;
   }
   
   .input-with-icon {
@@ -74,6 +75,7 @@
     border-radius: 5px;
     border: 1px solid #f3f2f5;
     font-size: 16px;
+    box-sizing: border-box;
   }
   
   .input-with-icon .icon {

@@ -5,6 +5,7 @@ import Sidebar from "./Sidebar";
 import "./FlightBody.css";
 import PriceAlert from "./PriceAlert.jsx";
 import Card from "./FlightComponents/Card1.jsx"
+import Card2 from "./FlightComponents/Card2.jsx"
 
 const FlightBody = () => {
   return (
@@ -16,6 +17,9 @@ const FlightBody = () => {
             <PriceAlert></PriceAlert>
             <div className="card1-container">
               <Card></Card>
+            </div>
+            <div className="card2-container">
+              <Card2></Card2>
             </div>
 
         </div>

@@ -8,7 +8,15 @@ import {
   faCreditCard,
   faCheckCircle,
 } from "@fortawesome/free-solid-svg-icons";
-import background_image from "../assets/payment images/image.svg";
+import background_image from "../assets/payment_images/image.svg";
+import Footer from "../Components/footer";
+import stripeLogo from "../assets/payment_images/stripe_icon.svg";
+import easypaisaLogo from "../assets/payment_images/easy_paisa.svg";
+import jazzcashLogo from "../assets/payment_images/jazz_cash.svg";
+import bankTransferLogo from "../assets/payment_images/debit_card.svg";
+import visaLogo from "../assets/payment_images/visa.svg";
+import ublLogo from "../assets/payment_images/ubl.svg";
+import alfala from "../assets/payment_images/alfala.png";
 
 const Payment = () => {
   return (
@@ -52,7 +60,7 @@ const Payment = () => {
                 <span className="payment-label">Stripe Payment</span>
               </div>
               <img
-                src="../assets/payment images/stripe-logo.png"
+                src={stripeLogo}
                 alt="Stripe Logo"
                 className="payment-logo"
               />
@@ -64,7 +72,7 @@ const Payment = () => {
                 <span className="payment-label">EasyPaisa</span>
               </div>
               <img
-                src="path/to/easypaisa-logo.png"
+                src={easypaisaLogo}
                 alt="EasyPaisa Logo"
                 className="payment-logo"
               />
@@ -76,7 +84,7 @@ const Payment = () => {
                 <span className="payment-label">JazzCash</span>
               </div>
               <img
-                src="path/to/jazzcash-logo.png"
+                src={jazzcashLogo}
                 alt="JazzCash Logo"
                 className="payment-logo"
               />
@@ -87,11 +95,18 @@ const Payment = () => {
                 <input type="radio" name="payment" />
                 <span className="payment-label">Bank Transfer</span>
               </div>
+              <div className="bank-transfer-logos">
               <img
-                src="path/to/banktransfer-logo.png"
+                src={ublLogo}
                 alt="Bank Transfer Logo"
                 className="payment-logo"
               />
+              <img
+                src={alfala}
+                alt="Bank Transfer Logo"
+                className="payment-logo"
+              />
+              </div>
             </label>
 
             {/* Debit Card Details */}
@@ -102,7 +117,7 @@ const Payment = () => {
                   <span className="payment-label">Debit Card</span>
                 </div>
                 <img
-                  src="path/to/visa-logo.png"
+                  src={visaLogo}
                   alt="Visa Logo"
                   className="payment-logo"
                 />
@@ -180,13 +195,23 @@ const Payment = () => {
           </div>
           <hr />
           <div className="details-row total">
-            <span className="bolds">Grand Total</span>
-            <span className="bolds">Rs. 476,058</span>
+            <div className="total-row">
+              <span className="bolds">Grand Total</span>
+              <span className="bolds">Rs. 476,058</span>
+            </div>
+            <div>
+              <span className="grand-total-exp">
+                Includes all taxes, fees, surcharges, and Kiwi.com service fees.
+                Kiwi.com service fees are calculated per passenger and are not
+                refundable.
+              </span>
+            </div>
           </div>
         </div>
       </div>
+      <Footer />
 
-      {/* Footer */}
+      {/* Footer
       <div className="center">
         <p>Seamless Payment Gateway Integration</p>
         <div className="center-logos">
@@ -196,7 +221,62 @@ const Payment = () => {
         </div>
       </div>
 
-      <div className=""></div>
+      <div className="footer">
+        <div className="footer-content">
+          <p className="first-footer">Company</p>
+          <p>About</p>
+          <p>MoonMyTrip</p>
+          <p>Press</p>
+          <p>Careers</p>
+          <p>Contact</p>
+          <p>Us</p>
+        </div>
+        <div className="footer-content">
+          <p className="first-footer">Learn More</p>
+          <p>Book on MoonMyTrip</p>
+          <p>Affiliates</p>
+          <p>Advertise</p>
+          <p>Hoteliers</p>
+          <p>Data Privacy Policy</p>
+          <p>Terms</p>
+        </div>
+        <div className="footer-content">
+          <p className="first-footer">Explore</p>
+          <p>Airport Directory</p>
+          <p>Airlines Directory</p>
+          <p>Flight Schedules</p>
+          <p>Hotel Chains</p>
+        </div>
+        <div className="footer-content">
+          <p className="first-footer">Download</p>
+          <p>Download</p>
+          <p>Wego App (iOS)</p>
+          <p>Weg`o App (Android)</p>
+        </div>
+        <div className="footer-content">
+          <p className="first-footer">Contact Us</p>
+          <p>Call: 03 111 543 111</p>
+          <p>Email: info@noonmytrip.com</p>
+        </div>
+      </div>
+      <hr className="end-line" />
+      <div className="footer-links">
+        <p>© 2024 NoonMytrip Travels Pvt Ltd</p>
+        <div className="social-icons">
+          <a href="https://www.facebook.com">
+            <img src="facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.twitter.com">
+            <img src="twitter.png" alt="Twitter" />
+          </a>
+          <a href="https://www.instagram.com">
+            <img src="instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://www.linkedin.com">
+            <img src="linkedin.png" alt="Linkedin" />
+          </a>
+        </div>
+      </div> */}
     </div>
   );
 };
