@@ -1,46 +1,23 @@
 // Payment.jsx
 import React from "react";
 import "./payment.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPlane,
-  faUsers,
-  faCreditCard,
-  faCheckCircle,
-} from "@fortawesome/free-solid-svg-icons";
-import background_image from "../assets/payment_images/image.svg";
-import Footer from "../Components/footer";
-import stripeLogo from "../assets/payment_images/stripe_icon.svg";
-import easypaisaLogo from "../assets/payment_images/easy_paisa.svg";
-import jazzcashLogo from "../assets/payment_images/jazz_cash.svg";
-import bankTransferLogo from "../assets/payment_images/debit_card.svg";
-import visaLogo from "../assets/payment_images/visa.svg";
-import ublLogo from "../assets/payment_images/ubl.svg";
-import alfala from "../assets/payment_images/alfala.png";
+
+import Navigation from "../Components/Navigation";
+import TripDetails from "../Components/tripDetails";
+import Center from "../Components/Center";
+import Footer2 from "../Components/footer2";
+// import stripeLogo from "../../assets/payment_images/stripe_icon.svg";
+// import easypaisaLogo from "../../assets/payment_images/easy_paisa.svg";
+// import jazzcashLogo from "../../assets/payment_images/jazz_cash-logo.svg";
+// import bankTransferLogo from "../../assets/payment_images/debit_card.svg";
+// import visaLogo from "../../assets/payment_images/visa.svg";
+// import ublLogo from "../../assets/payment_images/ubl.svg";
 
 const Payment = () => {
   return (
     <div className="payment-screen">
       {/* Top Navigation */}
-      <div className="navigation">
-        <img src={background_image} alt="" />
-        <div className="nav-item">
-          <FontAwesomeIcon icon={faPlane} className="icon" />
-          <span>Flights</span>
-        </div>
-        <div className="nav-item">
-          <FontAwesomeIcon icon={faUsers} className="icon" />
-          <span>Passengers</span>
-        </div>
-        <div className="nav-item active">
-          <FontAwesomeIcon icon={faCreditCard} className="icon" />
-          <span>Payments</span>
-        </div>
-        <div className="nav-item">
-          <FontAwesomeIcon icon={faCheckCircle} className="icon" />
-          <span>Confirm</span>
-        </div>
-      </div>
+      <Navigation />
 
       {/* Main Layout */}
       <div className="content">
@@ -96,16 +73,16 @@ const Payment = () => {
                 <span className="payment-label">Bank Transfer</span>
               </div>
               <div className="bank-transfer-logos">
-              <img
-                src={ublLogo}
-                alt="Bank Transfer Logo"
-                className="payment-logo"
-              />
-              <img
-                src={alfala}
-                alt="Bank Transfer Logo"
-                className="payment-logo"
-              />
+                <img
+                  // src={ublLogo}
+                  alt="Bank Transfer Logo"
+                  className="payment-logo"
+                />
+                <img
+                  // src={alfalahLogo}
+                  alt="Bank Transfer Logo"
+                  className="payment-logo"
+                />
               </div>
             </label>
 
@@ -159,124 +136,14 @@ const Payment = () => {
         </div>
 
         {/* Trip Details */}
-        <div className="trip-details">
-          <h3>Trip Details</h3>
-          <div className="btns">
-            <button className="active">Round Trip</button>
-            <button className="in-active">Economy</button>
-          </div>
-          <div className="details-row">
-            <span className="bolds">Lahore to Jeddah</span>
-            <div className="date-time">
-              <span>Mon, 23 Dec 2024</span>
-              <span>18h 40m</span>
-            </div>
-          </div>
-          <hr />
-          <div className="details-row">
-            <span className="bolds">Jeddah to Lahore</span>
-            <div className="date-time">
-              <span>Mon, 30 Dec 2024</span>
-              <span>18h 40m</span>
-            </div>
-          </div>
-          <hr />
-          <div className="details-row">
-            <span className="bolds">1x Passenger</span>
-            <span className="bolds">Rs. 476,058</span>
-          </div>
-          <div className="details-row">
-            <span className="bolds">1x Cabin baggage</span>
-            <span>Included</span>
-          </div>
-          <div className="details-row">
-            <span className="bolds">1x Checked baggage</span>
-            <span>Included</span>
-          </div>
-          <hr />
-          <div className="details-row total">
-            <div className="total-row">
-              <span className="bolds">Grand Total</span>
-              <span className="bolds">Rs. 476,058</span>
-            </div>
-            <div>
-              <span className="grand-total-exp">
-                Includes all taxes, fees, surcharges, and Kiwi.com service fees.
-                Kiwi.com service fees are calculated per passenger and are not
-                refundable.
-              </span>
-            </div>
-          </div>
-        </div>
+        <TripDetails />
       </div>
       <Footer />
 
-      {/* Footer
-      <div className="center">
-        <p>Seamless Payment Gateway Integration</p>
-        <div className="center-logos">
-          <img src="bank.png" alt="Bank" />
-          <img src="visa.png" alt="Visa" />
-          <img src="mastercard.png" alt="Mastercard" />
-        </div>
-      </div>
+      {/* Footer */}
+      <Center />
 
-      <div className="footer">
-        <div className="footer-content">
-          <p className="first-footer">Company</p>
-          <p>About</p>
-          <p>MoonMyTrip</p>
-          <p>Press</p>
-          <p>Careers</p>
-          <p>Contact</p>
-          <p>Us</p>
-        </div>
-        <div className="footer-content">
-          <p className="first-footer">Learn More</p>
-          <p>Book on MoonMyTrip</p>
-          <p>Affiliates</p>
-          <p>Advertise</p>
-          <p>Hoteliers</p>
-          <p>Data Privacy Policy</p>
-          <p>Terms</p>
-        </div>
-        <div className="footer-content">
-          <p className="first-footer">Explore</p>
-          <p>Airport Directory</p>
-          <p>Airlines Directory</p>
-          <p>Flight Schedules</p>
-          <p>Hotel Chains</p>
-        </div>
-        <div className="footer-content">
-          <p className="first-footer">Download</p>
-          <p>Download</p>
-          <p>Wego App (iOS)</p>
-          <p>Weg`o App (Android)</p>
-        </div>
-        <div className="footer-content">
-          <p className="first-footer">Contact Us</p>
-          <p>Call: 03 111 543 111</p>
-          <p>Email: info@noonmytrip.com</p>
-        </div>
-      </div>
-      <hr className="end-line" />
-      <div className="footer-links">
-        <p>© 2024 NoonMytrip Travels Pvt Ltd</p>
-        <div className="social-icons">
-          <a href="https://www.facebook.com">
-            <img src="facebook.png" alt="Facebook" />
-          </a>
-          <a href="https://www.twitter.com">
-            <img src="twitter.png" alt="Twitter" />
-          </a>
-          <a href="https://www.instagram.com">
-            <img src="instagram.png" alt="Instagram" />
-          </a>
-          <a href="https://www.linkedin.com">
-            <img src="linkedin.png" alt="Linkedin" />
-          </a>
-        </div>
-      </div> */}
+      <Footer2 />
     </div>
   );
 };

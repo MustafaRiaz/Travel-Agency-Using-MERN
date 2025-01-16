@@ -12,6 +12,10 @@ import Login from './pages/Login.jsx';
 import SignUp from './pages/Signup.jsx';
 import Payment from './pages/Payments.jsx';
 import Flights from './Components/Flights/Flights.jsx';
+import Confirm from './pages/Confirm.jsx';
+import ConfirmMessage from './pages/confirmMessage.jsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
+import TermsConditions from './pages/TermsConditions.jsx';
 
 
 function App() {
@@ -38,6 +42,12 @@ function App() {
         <Route path="/payments" element={<Payment />} />
         <Route path="/flights" element={<Flights />} />
         {/* <Route path="home" element={LandaingPage} /> */}
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/confirm" element={<Confirm />} />
+        <Route path="/message" element={<ConfirmMessage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-conditions" element={<TermsConditions />} />
+        
       </Routes>
     </Router>
   );

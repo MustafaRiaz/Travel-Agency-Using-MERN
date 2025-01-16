@@ -1,0 +1,329 @@
+/* .flight-data {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+
+.flight-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+}
+  
+  .trip-summary-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .return-flight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .flight-connection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .flight-connection .carrier {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .flight-connection .connection-number {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .flight-carrier{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .trip-route {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flight-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 97%;
+  }
+  
+  .flight-time {
+    width: 25%;
+  }
+  
+  .flight-time .time {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .flight-time .date {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .flight-time .airport {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  
+  .flight-time .airport-detail {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .flight-connection {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .flight-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .flight-line .dot {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  .flight-line .line {
+    height: 2px;
+    width: 50px;
+    background-color: #ddd;
+  }
+  
+  .flight-line .plane-icon {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  
+  .flight-duration {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .connection-info,
+  .carrier,
+  .connection-number {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .trip-nights {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+   */
+
+   .content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    border: 1px solid #000;
+  }
+  
+  .flight-data {
+    width: 40%;
+    border: 1px solid #000;
+  }
+  
+  .trip-details {
+    width: 50%; /* Adjusted width */
+    border: 1px solid #000; /* Optional for debugging */
+  }
+  
+   .flight-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  
+  /* Top Section Styling */
+  .flight-section.top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+  
+  .flight-section.top-section .flight-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .flight-details .time {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .flight-details .airport {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .flight-details .date,
+  .flight-details .airport-detail {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  /* Middle Section Styling */
+  .flight-section.middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .middle-section .flight-details {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .middle-section .line {
+    margin: 0;
+    padding: 0;
+    height: 8vh;
+    width: 2px;
+    background-color: #ddd;
+  }
+  
+  .middle-section .dot {
+    margin: 0;
+    padding: 0;
+    width: 1vh;
+    height: 1vh;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  .middle-section .plane-up {
+    font-size: 20px;
+    color: #666;
+  }
+  
+  .flight-carrier {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .flight-carrier img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .flight-company {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  /* Bottom Section Styling */
+  .flight-section.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .bottom-section .flight-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .flight-details .flight-duration {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .bottom-section .carrier,
+  .bottom-section .connection-number {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .carrier-bold,
+  .connection-number-bold {
+    font-weight: 600;
+  }
+  
+
+  .trip-route{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
