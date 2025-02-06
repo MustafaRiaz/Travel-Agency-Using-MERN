@@ -31,7 +31,7 @@
 .icon {
   width: 20px;
   height: 20px;
-  margin-right: 8px;
+  /* margin-right: 8px; */
   vertical-align: middle;
 }
 
@@ -43,15 +43,15 @@
 
 .top-button {
   position: absolute;
-  top: -54px;
+  top: -65px;
   left: 0px;
   background: #fbfbfc;
   color: #ff0211;
   padding: 20px 30px;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
-  width: 120px;
-  height: 60px;
+  width: 140px;
+  height: 70px;
   border: none;
   z-index: 0;
   display: flex;
@@ -62,7 +62,7 @@
 .top-button-2 {
   position: absolute;
   top: -30px;
-  left: 100px;
+  left: 120px;
   background: transparent;
   border: 20px solid #fbfbfc;
   border-top: none;
@@ -77,14 +77,15 @@
 
 .top-button-3 {
   position: absolute;
-  top: -57px;
-  left: 130px;
+  top: -65px;
+  left: 150px;
   background: #fbfbfc;
   padding: 0px 22px;
   color: black;
-  width: 110px;
-  height: 50px;
-  border-radius: 23px;
+  width: 120px;
+  border: none;
+  height: 60px;
+  border-radius: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,41 +107,46 @@
 
 .trip-buttons button {
   flex: 1;
-  max-width: 100px;
+  max-width: 140px;
   margin: 0 5px;
-  padding: 10px 15px;
+  padding: 20px 25px;
   font-size: 14px;
   margin-bottom: 10px;
-  height: 50px;
+  height: 60px;
   color: #555;
   background: #f3f2f5;
   border: 1px solid #ccc;
-  border-radius: 30px;
+  border-radius: 35px;
   cursor: pointer;
   z-index: 2;
+}
+.trip-buttons :nth-child(2) {
+  color: blue;
+  font-weight: 550;
+  background: lightgray;
 }
 
 .trip-buttons button:hover,
 .trip-buttons button.active {
-  background: lightgray;
-  color: white;
+  /* background: lightgray; */
+  color: #555;
 }
 
 /* Form Section */
 .form-section {
   display: grid; /* Grid layout for perfect alignment */
   grid-template-columns: 1fr 1fr 1fr 1fr; /* Four equal columns */
-  gap: 10px; /* Adds spacing between fields */
+  gap: 15px; /* Adds spacing between fields */
   align-items: center; /* Vertically centers items */
   margin-right: 20px;
 }
 
 .form-group {
   position: relative; /* Allows positioning of icons */
-  border: 1px solid #d6d6d9;
-  border-radius: 10px;
+  border: 1px solid #a5a4aa;
+  border-radius: 15px;
   background-color: #fbfbfc;
-  height: 60px; /* Consistent height for all fields */
+  height: 70px; /* Consistent height for all fields */
   display: flex;
   align-items: center;
 }
@@ -148,14 +154,16 @@
 .form-group img {
   position: absolute;
   top: 10px; /* Adjusts the icon position */
-  left: 10px;
+  left: 15px;
   width: 16px;
   height: 16px;
 }
 
 .form-group input {
   width: 100%;
-  padding: 20px 10px 10px 35px; /* Top, right, bottom, left padding */
+  padding: 25px 0px 0px 15px;
+  margin-bottom: 0;
+  line-height: 1;
   font-size: 14px;
   border: none;
   outline: none;
@@ -170,7 +178,7 @@
 .form-group label {
   position: absolute;
   top: 5px;
-  left: 35px; /* Aligns the label */
+  /* left: 35px; */
   font-size: 12px;
   color: #8e8e8e;
   pointer-events: none;
