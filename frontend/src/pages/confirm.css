@@ -182,14 +182,8 @@
   
   .flight-data {
     width: 40%;
-    border: 1px solid #000;
   }
-  
-  .trip-details {
-    width: 50%; /* Adjusted width */
-    border: 1px solid #000; /* Optional for debugging */
-  }
-  
+
    .flight-card {
     display: flex;
     flex-direction: column;

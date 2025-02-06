@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   background-size: cover;
   background-position: center;
+  /* background-color: pink; */
 }
 
 .background {
@@ -26,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .middle {
   z-index: 2;
+  /* background-color: pink; */
 }
 
 .foreground {
@@ -34,17 +36,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .flight-search {
   position: relative;
+  width: 88%;
+  margin-left:6%;
+  margin-right:6%;
   z-index: 5;
   top: 35%;
   margin-top: 20px;
-}
-
-
-
-.flight-search{
-  z-index: 1;
   margin-bottom: 20px;
+  /* background-color: yellow; */
 }
+
+
 
 .slide-container{
   position: relative;
@@ -56,18 +58,19 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   background-size: cover;
 }
-.slide {
+/* .slide {
   height: 70vh !important;
-}
-
+} */
+/* 
 .slide img {
-  display: none; /* Hide the img tag */
-}
+  display: none; /* Hide the img tag 
+} */
 
 .slide-content {
   position: absolute;
-  top: 20%;
-  right: 60%;
+  top: 18%;
+  /* right: 60%; */
+  margin-left: 5.5%;
   z-index: 1;
   text-align: left;
   align-items: left;
@@ -75,6 +78,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .slide-content>h1{
   font-size: 2.8rem;
+  line-height: 1.2;
+}
+.slide-content>p{
+  /* font-size: 1.5rem; */
+  margin-bottom: 15px;
+  line-height: 1.5;
 }
 
 

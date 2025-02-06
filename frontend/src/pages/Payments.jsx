@@ -37,7 +37,7 @@ const Payment = () => {
                 <span className="payment-label">Stripe Payment</span>
               </div>
               <img
-                src={stripeLogo}
+                // src={stripeLogo}
                 alt="Stripe Logo"
                 className="payment-logo"
               />
@@ -49,7 +49,7 @@ const Payment = () => {
                 <span className="payment-label">EasyPaisa</span>
               </div>
               <img
-                src={easypaisaLogo}
+                // src={easypaisaLogo}
                 alt="EasyPaisa Logo"
                 className="payment-logo"
               />
@@ -61,7 +61,7 @@ const Payment = () => {
                 <span className="payment-label">JazzCash</span>
               </div>
               <img
-                src={jazzcashLogo}
+                // src={jazzcashLogo}
                 alt="JazzCash Logo"
                 className="payment-logo"
               />
@@ -94,7 +94,7 @@ const Payment = () => {
                   <span className="payment-label">Debit Card</span>
                 </div>
                 <img
-                  src={visaLogo}
+                  // src={visaLogo}
                   alt="Visa Logo"
                   className="payment-logo"
                 />
@@ -138,7 +138,6 @@ const Payment = () => {
         {/* Trip Details */}
         <TripDetails />
       </div>
-      <Footer />
 
       {/* Footer */}
       <Center />

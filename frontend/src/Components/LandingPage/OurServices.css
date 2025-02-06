@@ -18,12 +18,16 @@
 }
 
 .services-content {
-  max-width: 1200px;
-  width: 100%;
+  /* max-width: 1200px; */
+
+  width: 88%;
+  margin-left: 6%;
+  margin-right: 6%;
+
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  gap: 50px;
+  /* align-items: stretch; */
+  /* gap: 50px; */
 }
 
 .service-cards {

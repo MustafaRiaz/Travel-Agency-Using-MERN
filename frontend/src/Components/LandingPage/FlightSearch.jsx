@@ -3,7 +3,6 @@ import "./FlightSearch.css"; // Assuming you extract the CSS to a separate file
 import aeroplaneIcon from "../../assets/Slider Images/FlightBooking/aeroplane.png";
 import hotelIcon from "../../assets/Slider Images/FlightBooking/hotel.png"; // Load hotel icon
 import mapMarkerIcon from "../../assets/Slider Images/FlightBooking/From.png"; // Load map marker icon
-import doubleArrows from "../../assets/Slider Images/FlightBooking/doubleArrows.png"; // Load map marker icon
 
 const FlightSearch = () => {
   const [activeTab, setActiveTab] = useState("one-way");
@@ -41,27 +40,19 @@ const FlightSearch = () => {
       </div>
 
       {/* Third Row */}
-      {/* Third Row */}
       <div className="form-section">
         {/* From */}
         <div className="form-group">
           <label htmlFor="from">
             <img src={mapMarkerIcon} alt="From" className="icon" />
-            <span>From</span> {/* Text added after icon */}
           </label>
           <input type="text" id="from" placeholder="Lahore, Pakistan" />
-        </div>
-
-        {/* Overlay Icon */}
-        <div className="overlay-icon">
-          <img src={doubleArrows} alt="Swap" className="overlay-img" />
         </div>
 
         {/* To */}
         <div className="form-group">
           <label htmlFor="to">
             <img src={mapMarkerIcon} alt="To" className="icon" />
-            <span>To</span> {/* Text added after icon */}
           </label>
           <input type="text" id="to" placeholder="United Arab Emirates" />
         </div>
@@ -70,7 +61,6 @@ const FlightSearch = () => {
         <div className="form-group">
           <label htmlFor="departure">
             <img src={mapMarkerIcon} alt="Departure" className="icon" />
-            <span>Departure</span> {/* Text added after icon */}
           </label>
           <input type="date" id="departure" />
         </div>
@@ -79,12 +69,10 @@ const FlightSearch = () => {
         <div className="form-group">
           <label htmlFor="return">
             <img src={mapMarkerIcon} alt="Return" className="icon" />
-            <span>Return</span> {/* Text added after icon */}
           </label>
           <input type="date" id="return" />
         </div>
       </div>
-
 
       {/* Fourth Row */}
       <div className="footer-row">

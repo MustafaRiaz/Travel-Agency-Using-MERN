@@ -1,19 +1,22 @@
 /* Container Styling */
 .noonmytrip-container {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    /* padding: 20px; */
     margin-top: 100px;
-    box-sizing: border-box;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
   }
   
   /* Major Airlines Section */
   .airlines-section {
     border-radius: 12px;
-    padding: 20px 40px;
+    /* padding: 20px 40px; */
     margin-bottom: 40px;
     justify-content: center;
     align-items: center;
     display: flex;
+    background-color: white;
   }
 
   .airlines-subsection{
@@ -25,7 +28,8 @@
     padding: 20px 25px;
     border-radius: 30px;
     min-height: 120px;
-    max-width: 1200px;
+    width: 100%;
+    /* max-width: 1200px; */
   }
   
   .airlines-section h3 {
@@ -61,6 +65,7 @@
   /* Features Section */
   .features-section {
     text-align: center;
+    width: 100%;
     /* background-color: gray; */
   }
   
@@ -76,10 +81,12 @@
   
   .features-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    /* background-color: black; */
     gap: 30px;
     margin-bottom: 100px;
+    width: 100%;
   }
   
   .feature-item {

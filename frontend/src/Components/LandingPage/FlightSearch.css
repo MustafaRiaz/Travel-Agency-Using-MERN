@@ -1,9 +1,9 @@
 .container {
   background: #fbfbfc;
-  width: 100%;
-  max-width: 1500px;
+  /* background-color: red; */
+  /* max-width: 1500px; */
   min-width: 1200px;
-  max-height: 270px;
+  /* max-height: 250px; */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px 30px;
   box-sizing: border-box;
@@ -11,13 +11,12 @@
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
   border-bottom-left-radius: 17px;
+  width: 100%;
 }
-
 
 .tab-container {
   display: flex;
   gap: 20px; /* Adds spacing between tabs */
-  box-sizing: border-box;
 }
 
 .tab {
@@ -131,73 +130,36 @@
 .form-section {
   display: grid; /* Grid layout for perfect alignment */
   grid-template-columns: 1fr 1fr 1fr 1fr; /* Four equal columns */
-  gap: 15px; /* Adds spacing between fields */
+  gap: 10px; /* Adds spacing between fields */
   align-items: center; /* Vertically centers items */
   margin-right: 20px;
 }
 
 .form-group {
-  position: relative;
-  display: flex;
-  flex-direction: column; /* Makes the icon-text label and input stack vertically */
+  position: relative; /* Allows positioning of icons */
   border: 1px solid #d6d6d9;
   border-radius: 10px;
   background-color: #fbfbfc;
-  height: auto;
-  box-sizing: border-box;
-  padding: 10px; /* Adds padding inside the field */
-}
-
-.form-group label {
+  height: 60px; /* Consistent height for all fields */
   display: flex;
-  align-items: center; /* Aligns the icon and text in a row */
-  font-size: 14px;
-  margin-left: 10px;
-  color: #8e8e8e;
-  pointer-events: none;
+  align-items: center;
 }
 
 .form-group img {
+  position: absolute;
+  top: 10px; /* Adjusts the icon position */
+  left: 10px;
   width: 16px;
   height: 16px;
-  margin-right: 8px; /* Adds space between the icon and text */
-}
-
-.form-group span {
-  font-size: 14px;
-  color: #8e8e8e;
 }
 
 .form-group input {
-  margin-top: 10px; /* Adds space between the label and input */
   width: 100%;
-  margin-left: 10px;
+  padding: 20px 10px 10px 35px; /* Top, right, bottom, left padding */
   font-size: 14px;
   border: none;
   outline: none;
   background-color: transparent;
-}
-
-/* Overlay Icon between From and To */
-.overlay-icon {
-  position: absolute;
-  top: 47%;
-  border: 1px solid #ccc;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 25.5%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  z-index: 1;
-}
-
-.overlay-img {
-  width: 20px;
-  height: 20px;
 }
 
 .form-group input:focus {
@@ -205,6 +167,14 @@
   border-color: #fbfbfc;
 }
 
+.form-group label {
+  position: absolute;
+  top: 5px;
+  left: 35px; /* Aligns the label */
+  font-size: 12px;
+  color: #8e8e8e;
+  pointer-events: none;
+}
 
 /* Fourth Row */
 .footer-row {

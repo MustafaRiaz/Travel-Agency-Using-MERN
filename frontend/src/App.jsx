@@ -11,7 +11,6 @@ import SubscribeComponent from './Components/LandingPage/Subscription.jsx';
 import Login from './pages/Login.jsx';
 import SignUp from './pages/Signup.jsx';
 import Payment from './pages/Payments.jsx';
-import Flights from './Components/Flights/Flights.jsx';
 import Confirm from './pages/Confirm.jsx';
 import ConfirmMessage from './pages/confirmMessage.jsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
@@ -39,9 +38,6 @@ function App() {
         } />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/payments" element={<Payment />} />
-        <Route path="/flights" element={<Flights />} />
-        {/* <Route path="home" element={LandaingPage} /> */}
         <Route path="/payment" element={<Payment />} />
         <Route path="/confirm" element={<Confirm />} />
         <Route path="/message" element={<ConfirmMessage />} />
