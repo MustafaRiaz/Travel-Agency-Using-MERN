@@ -3,14 +3,13 @@ import './Slider.css';
 import image1 from "../../assets/Slider Images/CardImages/Layer1.svg";
 import image2 from "../../assets/Slider Images/CardImages/Layer2.svg"; 
 import FlightSearch from './FlightSearch';
-import Navbar from './Navbar';
+
 
 const Slide = () => {
   const images = [image1, image2];
 
   return (
     <>
-      <Navbar />
       <div className="slide-container">
         <div className="slide">
           {images.map((image, index) => (

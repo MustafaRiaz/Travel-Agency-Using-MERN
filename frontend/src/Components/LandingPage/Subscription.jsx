@@ -37,8 +37,9 @@ function SubscribeComponent() {
             checked={isChecked}
             onChange={() => setIsChecked(!isChecked)}
           />
-          I would like to get offers and news from Qatar Airways. I have read
+          <p className="ConsentParagraph">I would like to get offers and news from Qatar Airways. I have read
           and understood the privacy notice.
+          </p>
         </label>
       </div>
     </div>

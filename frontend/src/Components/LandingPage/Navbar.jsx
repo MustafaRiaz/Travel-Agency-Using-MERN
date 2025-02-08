@@ -12,9 +12,9 @@ const Navbar = () => {
         </h1>
       </div>
       <ul className="navbar-links">
-        <li><a href="#home" className="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#flights">Flights</a></li>
+        <li><a href="/" className="active">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="/flights">Flights</a></li>
         <li><a href="#hotels">Hotels</a></li>
         <li><a href="#blog">Blog</a></li>
         {/* Use Link for navigation to Login page */}

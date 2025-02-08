@@ -84,7 +84,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     /* background-color: black; */
-    gap: 30px;
+    /* gap: 30px; */
     margin-bottom: 100px;
     width: 100%;
   }
@@ -93,7 +93,7 @@
     border: 1px solid #585353;
     border-radius: 15px;
     padding: 17px;
-    width: 230px;
+    width: 21%;
     text-align: left;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     transition: transform 0.3s ease-in-out;

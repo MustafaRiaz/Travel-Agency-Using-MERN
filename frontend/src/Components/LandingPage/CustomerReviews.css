@@ -1,44 +1,150 @@
-
 .customer-reviews {
   text-align: center;
-  padding: 20px;
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto; /* Allow height to adjust dynamically */
+  padding: 2rem; /* Use rem for scalable padding */
+  box-sizing: border-box;
   height: 80vh;
-  display: flex; /* Use flexbox for vertical alignment */
-  flex-direction: column; /* Align items in a column */
-  justify-content: center; /* Vertically center the content */
-  align-items: center; /* Horizontally center the content */
 }
 
 .customer-reviews h2 {
-  font-size: 38px;
-  margin-bottom: 70px;
+  font-size: 3.2rem; /* Scalable font size */
+  margin-bottom: 2rem;
   font-weight: 600;
 }
 
 .reviews-container {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: space-between; /* Space evenly between cards */
+  gap: 1.25rem; /* Scalable gap between cards */
+  width: 88%;
+  /* margin: 0 auto; */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-left: 6%;
+  margin-right: 6%;
 }
 
 .review-card {
   border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 350px;
-  max-height: 350px;
+  border-radius: 1.5rem; /* Rounded corners using rem */
+  padding: 1.5rem;
+  max-width: 27%; /* Adjust width dynamically for larger screens */
+  width: 100%; /* Full width on small screens */
+  
   text-align: left;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-bottom: 1.25rem; /* Add spacing between rows */
+  transition: transform 0.3s ease; /* Hover effect */
+}
+
+.review-card:hover {
+  transform: translateY(-5px); /* Slight elevation on hover */
+}
+
+.review-card p {
+  font-size: 1rem; /* Base font size for text */
+  color: #333;
+  line-height: 1.6;
 }
 
 .review-card h3 {
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 0.625rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .stars {
   color: #ffa500;
-  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.review-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem; /* Space between image and text */
+  margin-top: 1.25rem;
+}
+
+.review-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%; /* Circular profile image */
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-info h3 {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.review-info .stars {
+  margin-top: 0.125rem;
+  font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .customer-reviews h2 {
+    font-size: 2rem; /* Reduce font size for smaller screens */
+    margin-bottom: 1.5rem;
+  }
+
+  .reviews-container {
+    gap: 1rem; /* Adjust gap for smaller screens */
+  }
+
+  .review-card {
+    max-width: 45%; /* Two cards per row on tablets */
+  }
+
+  .review-card p {
+    font-size: 0.95rem; /* Slightly smaller text for tablets */
+  }
+
+  .review-footer {
+    gap: 0.5rem; /* Adjust spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .customer-reviews h2 {
+    font-size: 1.5rem; /* Further reduce font size for mobile */
+    margin-bottom: 1rem;
+  }
+
+  .review-card {
+    padding: 1rem; /* Compact padding for smaller screens */
+    border-radius: 1.25rem;
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .review-card p {
+    font-size: 0.85rem; /* Smaller font size for readability on mobile */
+  }
+
+  .review-footer {
+    margin-top: 1rem; /* Adjust margin */
+  }
+
+  .review-image {
+    width: 2.5rem; /* Reduce size for mobile */
+    height: 2.5rem;
+  }
 }

@@ -5,11 +5,13 @@
     background-size: cover;
     background-position: center;
     border-radius: 20px;
-    width: 80%;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
     height: 300px; /* Adjust the height as needed */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:end;
     overflow: hidden;
     box-sizing: border-box;
     margin: auto;
@@ -19,9 +21,10 @@
   .content-box {
     color: #fff;
     text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 50%;
+    /* margin: 0 auto; */
     padding: 0 20px;
+    /* background-color: red; */
   }
   
   /* Title */
@@ -47,7 +50,7 @@
   
   .email-input {
     flex: 1;
-    padding: 12px 15px;
+    padding: 22px 35px;
     border: none;
     border-radius: 50px;
     font-size: 14px;
@@ -60,7 +63,7 @@
     color: white;
     border: none;
     border-radius: 50px;
-    padding: 12px 30px;
+    padding: 22px 70px;
     font-size: 14px;
     cursor: pointer;
     font-weight: bold;
@@ -83,5 +86,10 @@
     margin-right: 8px;
     transform: scale(1.2); /* Make the checkbox bigger */
     cursor: pointer;
+    color: white;
+  }
+  .ConsentParagraph{
+    color: white;
+    font-size: 1.1rem;
   }
   

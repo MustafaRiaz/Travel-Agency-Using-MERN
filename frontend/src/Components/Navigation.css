@@ -9,6 +9,7 @@
     overflow: hidden;
     display: flex;
     padding: 15px 0;
+    /* z-index: 100; */
     border-bottom: 2px solid #ddd;
   }
   

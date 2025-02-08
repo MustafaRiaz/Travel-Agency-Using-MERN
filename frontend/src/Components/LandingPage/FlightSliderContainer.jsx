@@ -5,7 +5,7 @@ import './FlightSliderContainer.css';
 const FlightSliderContainer = () => {
     return (
         <div className="flight-slider-container">
-            <h1>
+            <h1 className='flight-slider-heading'>
                 Book Your <span className="highlight">Flight</span> Tickets Now!
             </h1>
             <FlightSlider />
